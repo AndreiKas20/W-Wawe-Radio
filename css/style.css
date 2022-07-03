@@ -23,43 +23,43 @@ img {
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat-Regular"),
-    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-family: "Muller";
+  src: local("Muller-light"),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat-SemiBold"),
-    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-family: "Muller";
+  src: local("Mulleri-Medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
   font-display: swap;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
+
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat-Bold"),
-    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-family: "Muller";
+  src: local("Muller-Bold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
   font-display: swap;
   font-weight: 700;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat-ExtraBold"),
-    url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-display: swap;
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -80,3 +80,33 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 405px;
+  max-width: 1920px;
+}
+
+.flex {
+  display: flex;
+}
+
+.head-container {
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+.head-container__head-logo {
+  margin-right: 80px;
+}
+
+.head-container__nav-top {
+  margin-right: auto;
+}
+
+.head-container__item-nav-top:not(:last-child) {
+  margin-right: 58px;
+}
+
+.head-container__btn-search {
+  margin-right: 28px;
+}
