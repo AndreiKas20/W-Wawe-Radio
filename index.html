@@ -50,12 +50,16 @@
                         </li>
                     </ul>
                 </nav>  
-                <button class="head-container__btn-search"></button>
+                <button class="head-container__btn-search flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
                 <button class="head-container__btn-input">Вход</button>
             </div>
-            <div class="head-container__block-bottom">
-                <nav class="head-cintainer__nav-bottom">
-                    <ul class="head-container__list-bottom">
+            <div class="head-container__block-bottom flex">
+                <nav class="head-container__nav-bottom">
+                    <ul class="head-container__list-bottom flex">
                         <li class="head-container__item-bottom">
                             <a href="#" class="head-container__link-bottom">Новости</a>
                         </li>
@@ -76,7 +80,26 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="head-container__music-block"></div>
+                <div class="head-container__music-block-before flex">
+                    <div class="head-container__mus-left"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                        </svg>
+                        </div>
+                    <div class="head-cotainer__mus-right">
+                        <span class="head-container__adv-text-mus">Ранее в эфире</span>
+                        <h5 class="head-container__name-mus">«Музыка»</h5>
+                    </div>
+                </div>
+                <div class="head-container__music-block-live flex">
+                    <div class="head-container__mus-left"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                        </svg>
+                        </div>
+                    <div class="head-cotainer__mus-right">
+                        <span class="head-container__adv-text-mus">Сейчас в эфире</span>
+                        <h5 class="head-container__name-mus">«Как так?»</h5>
+                    </div>
+                </div>
                 <svg width="46" height="60" viewBox="0 0 46 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="46" height="60" fill="#E6E8EC"/>
                     <rect x="8" y="15" width="30" height="30" rx="15" fill="white"/>
@@ -89,6 +112,9 @@
     <main class="main-content">
         <section class="section-live">
             <div class="container">
+                <div class="section-live__left-block">
+
+                </div>
                 <h1 class="section-live__title">Радио W-Wawe</h1>
                 <p class="section-live__text">Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое:)
                 </p>
@@ -101,9 +127,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                             <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">15:43</span>
+                            <h4 class="section-podcast__padcast-name">Европа. XIX век</h4>
+                            <span class="section-pocast__name-presenter">Дмитрий Гутенберг</span>
                             </div>
                             <div class="section-podcast__podcast-bottom">
                                 
@@ -113,9 +139,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                          <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">5:32</span>
+                            <h4 class="section-podcast__padcast-name">О музыке</h4>
+                            <span class="section-pocast__name-presenter">Дмитрий Гутенберг</span>
                         </div>
                         <div class="section-podcast__podcast-bottom">
                                 
@@ -125,9 +151,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                          <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">8:54</span>
+                            <h4 class="section-podcast__padcast-name">Люди сегодня</h4>
+                            <span class="section-pocast__name-presenter">Анна Васильева</span>
                         </div>
                         <div class="section-podcast__podcast-bottom">
                                 
@@ -137,9 +163,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                         <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">9:04</span>
+                            <h4 class="section-podcast__padcast-name">Хэллоу, Африка!</h4>
+                            <span class="section-pocast__name-presenter">Пётр Дмитриевский</span>
                          </div>
                          <div class="section-podcast__podcast-bottom">
                                 
@@ -149,9 +175,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                         <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">7:03</span>
+                            <h4 class="section-podcast__padcast-name">Обо всём</h4>
+                            <span class="section-pocast__name-presenter">Пётр Дмитриевский</span>
                         </div>
                         <div class="section-podcast__podcast-bottom">
                                 
@@ -161,9 +187,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                         <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">9:15</span>
+                            <h4 class="section-podcast__padcast-name">Физика цвета</h4>
+                            <span class="section-pocast__name-presenter">Татьяна Флеганова</span>
                         </div>
                         <div class="section-podcast__podcast-bottom">
                                 
@@ -173,9 +199,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                         <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">16:04</span>
+                            <h4 class="section-podcast__padcast-name">Источник звука</h4>
+                            <span class="section-pocast__name-presenter">Пётр Дмитриевский</span>
                          </div>
                          <div class="section-podcast__podcast-bottom">
                                 
@@ -185,9 +211,9 @@
                     <li class="section-podcast__item">
                         <div class="section-podcast__podcast">
                         <div class="section-podcast__podcast-top">
-                            <span class="section-podcast__time-podcast"></span>
-                            <h4 class="section-podcast__padcast-name"></h4>
-                            <span class="section-pocast__name-presenter"></span>
+                            <span class="section-podcast__time-podcast">6:55</span>
+                            <h4 class="section-podcast__padcast-name">Правила этикета</h4>
+                            <span class="section-pocast__name-presenter">Татьяна Флеганова</span>
                         </div>
                         <div class="section-podcast__podcast-bottom">
                               
