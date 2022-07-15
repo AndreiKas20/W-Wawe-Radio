@@ -370,3 +370,28 @@ body {
 .section-podcast__item {
   flex-basis: 50%;
 }
+
+.section-podcast__podcast {
+  position: relative;
+  background-color: var(--colorWhite-FFF);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+}
+
+.section-podcast__ico-play {
+  position: absolute;
+}
+
+.section-podcast__podcast-top {
+  position: relative;
+  padding: 24px 30px 4px;
+}
+
+.section-podcast__podcast-bottom {
+  position: relative;
+}
+
+.section-podcast__date-podcast_absolute {
+  position: absolute;
+}
