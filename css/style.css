@@ -34,12 +34,32 @@ img {
 
 @font-face {
   font-family: "Muller";
+  src: local("Muller-lightItalic"),
+    url("../fonts/MullerLightItalic.woff2") format("woff2"),
+    url("../fonts/MullerLightItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Muller";
   src: local("Muller-Regular"),
     url("../fonts/MullerRegular.woff2") format("woff2"),
     url("../fonts/MullerRegular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+    url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
@@ -52,6 +72,16 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local("Mulleri-Medium"),
+    url("../fonts/MullerMediumItalic.woff2") format("woff2"),
+    url("../fonts/MullerMediumItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: "Muller";
@@ -62,6 +92,17 @@ img {
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-BoldItalic"),
+    url("../fonts/MullerBoldItalic.woff2") format("woff2"),
+    url("../fonts/MullerBoldItalic.woff2") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 :root {
 --paddingSection: 94px 0;
@@ -261,4 +302,71 @@ body {
   font-size: var(--fontSize-small);
   line-height: 16px;
   color: var(--colorBlack-121723);
+}
+
+.container-live-sec {
+  align-items: center;
+}
+
+.section-live {
+  padding-top: 11px;
+  padding-bottom: 32px;
+}
+
+.section-live__left-block {
+  flex-basis: 55%;
+  margin-right: auto;
+}
+
+.section-live__title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: var(--fontSize-HeadTitle);
+  line-height: 100%;
+  color: var(--colorBlack-121723);
+}
+
+.section-live__title_italic-part {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-live__text {
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: var(--fontSize-normal);
+  line-height: 150%;
+}
+
+.section-live__btn {
+  padding: 25px 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--colorWhite-FFF);
+  border: none;
+  background: #6D31EE;
+  border-radius: 40px;
+}
+
+
+.section-podcast {
+  padding: var(--paddingSection);
+  background-color: #F2F2F2;;
+}
+
+.section-podcast__title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: var(--fontSize-Title);
+  line-height: 100%;
+  color: var(--colorBlack-121723);
+}
+
+.section-podcast__list {
+  flex-wrap: wrap;
+}
+
+.section-podcast__item {
+  flex-basis: 50%;
 }
