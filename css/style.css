@@ -481,3 +481,27 @@ body {
   border-radius: 40px;
   border-color: var(--colorSemiPurple-6D31EE);
 }
+
+.section-broadcast {
+  padding: var(--paddingSection);
+}
+
+.section-broadcast__title {
+  font-weight: 400;
+  font-size: var(--fontSize-Title);
+  line-height: 100%;
+  color: var(--colorBlack-121723);
+}
+
+.section-bradcast__broadcast-list {
+  flex-wrap: wrap;
+}
+
+
+
+.section-broadcast__text-author {
+  font-weight: 400;
+  font-size: var(--fontSize-normal);
+  line-height: 16px;
+  color: var(--colorGray-A1A6B4);
+}
