@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Радио W-Wawe</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script defer src="script/choices.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.js" defer></script>
+    <script defer src="script/script.js"></script>
 </head>
 <body>
     <header class="head-container">
@@ -442,8 +447,11 @@
                 <div class="section-broadcast__left-block flex">
                     <h2 class="section-broadcast__title">Передачи</h2>
                     <span class="section-broadcast__text-author">Автор</span>
-                    <select class="section-broadcast__select-author" name="#" id="select">
-                        <option value="#">Дмитрий Гутенберг</option>
+                    <select class="section-broadcast__select-author" name="js-choice" id="select">
+                        <option value="value">Дмитрий Гутенберг</option>
+                        <option value="value1">Татьяна Флеганова</option>
+                        <option value="value2">Анна Васильева</option>
+                        <option value="value3">Пётр Дмитриевский</option>
                     </select>
                     <img class="section-broadcast__img" src="/img/microphone-broadcast.png" alt="картинка с микрофоном">
                     <div class="section-broadcast__btn-block">
@@ -550,50 +558,212 @@
                 </p>
                 <div class="section-guests__bot-block flex">
                     <div class="section-guests__left-block">
-                        <ul class="section-guests__sub-list">
-                            <li class="section-guests__sub-item flex">
+                        <ul class="section-guests__ac accordion__list" id="accordion">
+                            <li class="section-guests__ac-item accordion__item ac">
+                              <div class="section-guests__ac-top accordion__top flex">
                                 <h3 class="section-guests__subtitle">Блогеры</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
+                                <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                </svg>                                    
+                              </div>
+                              <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                <ul class="section-guests__blogers-sub-list">
+                                  <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                  <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                  <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                  <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                              </ul>
+                              <ul class="section-guests__blogers-sub-list">
+                                  <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                  <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                  <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                  <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                              </ul>
+                              <ul class="section-guests__blogers-sub-list">
+                                  <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                  <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                  <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                  <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                              </ul>
+                              <ul class="section-guests__blogers-sub-list">
+                                  <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                  <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                  <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                              </ul>
+                              </div>
                             </li>
-                            <li class="section-guests__sub-item flex">
-                                <h3 class="section-guests__subtitle">Арт-критики</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
-                            </li>
-                            <li class="section-guests__sub-item flex">
-                                <h3 class="section-guests__subtitle">Художники</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
-                            </li>
-                            <li class="section-guests__sub-item flex">
-                                <h3 class="section-guests__subtitle">Люди науки</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
-                            </li>
-                            <li class="section-guests__sub-item flex">
-                                <h3 class="section-guests__subtitle">Историки</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
-                            </li>
-                            <li class="section-guests__sub-item flex">
-                                <h3 class="section-guests__subtitle">Филологи</h3>
-                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                                </svg>
-                            </li>
-                        </ul>
+                            <li class="section-guests__ac-item accordion__item ac">
+                                <div class="section-guests__ac-top accordion__top flex">
+                                  <h3 class="section-guests__subtitle">Арт-критики</h3>
+                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                      <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                  </svg>                                    
+                                </div>
+                                <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                  <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                    <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                    <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                    <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                    <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                    <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                    <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                    <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                    <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                    <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                    <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                    <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                                </ul>
+                                </div>
+                              </li>
+                              <li class="section-guests__ac-item accordion__item ac">
+                                <div class="section-guests__ac-top accordion__top flex">
+                                  <h3 class="section-guests__subtitle">Художники</h3>
+                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                      <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                  </svg>                                    
+                                </div>
+                                <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                  <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                    <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                    <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                    <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                    <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                    <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                    <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                    <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                    <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                    <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                    <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                    <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                                </ul>
+                                </div>
+                              </li>
+                              <li class="section-guests__ac-item accordion__item ac">
+                                <div class="section-guests__ac-top accordion__top flex">
+                                  <h3 class="section-guests__subtitle">Люди науки</h3>
+                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                      <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                  </svg>                                    
+                                </div>
+                                <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                  <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                    <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                    <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                    <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                    <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                    <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                    <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                    <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                    <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                    <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                    <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                    <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                                </ul>
+                                </div>
+                              </li>
+                              <li class="section-guests__ac-item accordion__item ac">
+                                <div class="section-guests__ac-top accordion__top flex">
+                                  <h3 class="section-guests__subtitle">Историки</h3>
+                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                      <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                  </svg>                                    
+                                </div>
+                                <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                  <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                    <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                    <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                    <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                    <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                    <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                    <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                    <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                    <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                    <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                    <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                    <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                                </ul>
+                                </div>
+                              </li>
+                              <li class="section-guests__ac-item accordion__item ac">
+                                <div class="section-guests__ac-top accordion__top flex">
+                                  <h3 class="section-guests__subtitle">Филологи</h3>
+                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                                      <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                                  </svg>                                    
+                                </div>
+                                <div class=" section-guests__blogers-list accordion__bottom select-ac ac-panel">
+                                  <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Сергей Денисов</li>
+                                    <li class="section-guests__blogers-sub-item">Матвей Мечников</li>
+                                    <li class="section-guests__blogers-sub-item">Константин Прусино</li>
+                                    <li class="section-guests__blogers-sub-item">Иван Калитников</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Евгений Войновский</li>
+                                    <li class="section-guests__blogers-sub-item">Ольга Мартынова</li>
+                                    <li class="section-guests__blogers-sub-item">Дмитрий Михалок</li>
+                                    <li class="section-guests__blogers-sub-item">Пётр Пиотровский</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Олег Свиридовский</li>
+                                    <li class="section-guests__blogers-sub-item">Владислав Кауперс</li>
+                                    <li class="section-guests__blogers-sub-item">Михаил Пожитников</li>
+                                    <li class="section-guests__blogers-sub-item">Георгий Полуян</li>
+                                </ul>
+                                <ul class="section-guests__blogers-sub-list">
+                                    <li class="section-guests__blogers-sub-item">Денис Тельман</li>
+                                    <li class="section-guests__blogers-sub-item">Юрий Горин</li>
+                                    <li class="section-guests__blogers-sub-item">Максим Сергеев</li>
+                                </ul>
+                                </div>
+                              </li>
+                          </ul>
                     </div>
                     <div class="section-guests__rightn-block">
                          <img class="section-guests__foto-guests" src="/img/guests-foto.jpg" alt="Фото гостя" class="section-guests__foto">
@@ -619,156 +789,158 @@
             </div>
         </section>
         <section class="section-playlists">
-            <div class="container">
+            <div class="container flex">
                 <div class="section-playlists__left-block">
-                    <h2 class="section-playlists">Плейлисты</h2>
+                    <h2 class="section-playlists__title">Плейлисты</h2>
+                    <span class="section-playlists__genre">Жанр</span>
                     <ul class="section-playlists__list">
                         <li class="section-playlistst__item">
-                              <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox1" required>
+                              <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio1" required>
                         Постпанк
                         <span class="span"></span>
                       </label>                            
                         </li>
                         <li class="section-playlistst__item">
-                            <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox2" required>
+                            <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio2" required>
                         Хардкор
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                             <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox3" required>
+                             <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio3" required>
                         Панк-рок
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                            <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox4" required>
+                            <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio4" required>
                         Рок
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                             <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox5" required>
+                             <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio5" required>
                         Прогрессивный рок
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                            <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox6" required>
+                            <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio6" required>
                         Электронная музыка
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                            <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox7" required>
+                            <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio7" required>
                         Классическая музыка
                         <span class="span"></span>
                       </label>
                         </li>
                         <li class="section-playlistst__item">
-                            <label class="section-playlists__playlists-type" for="checkbox1">
-                        <input  aria-checked="true" class="section-playlists__checkbox" type="radio" name="checkbox1" id="checkbox8" required>
+                            <label class="section-playlists__playlists-type" for="radio1">
+                        <input  aria-checked="true" class="section-playlists__radio" type="radio" name="radio1" id="radio8" required>
                         Звуки природы и шум города
                         <span class="span"></span>
                       </label>
                         </li>
                     </ul>
                     <p class="section-playlists__text">
-                        Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних <br> © 2021 l W-Wave <br>
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.68945 20H7.74023V13.8945C7.74023 13.3867 7.75586 12.9062 7.78711 12.4531C7.70508 12.5352 7.61328 12.6211 7.51172 12.7109C7.41016 12.8008 6.94531 13.1816 6.11719 13.8535L5.60156 13.1855L7.86914 11.4336H8.68945V20ZM14.7891 11.3105C15.5703 11.3105 16.1895 11.4922 16.6465 11.8555C17.1035 12.2188 17.332 12.7207 17.332 13.3613C17.332 13.7832 17.2012 14.168 16.9395 14.5156C16.6777 14.8633 16.2598 15.1797 15.6855 15.4648C16.3809 15.7969 16.875 16.1465 17.168 16.5137C17.4609 16.877 17.6074 17.2988 17.6074 17.7793C17.6074 18.4902 17.3594 19.0586 16.8633 19.4844C16.3672 19.9062 15.6875 20.1172 14.8242 20.1172C13.9102 20.1172 13.207 19.918 12.7148 19.5195C12.2227 19.1172 11.9766 18.5488 11.9766 17.8145C11.9766 16.834 12.5742 16.0703 13.7695 15.5234C13.2305 15.2188 12.8438 14.8906 12.6094 14.5391C12.375 14.1836 12.2578 13.7871 12.2578 13.3496C12.2578 12.7285 12.4863 12.2344 12.9434 11.8672C13.4043 11.4961 14.0195 11.3105 14.7891 11.3105ZM12.9375 17.8379C12.9375 18.3066 13.0996 18.6719 13.4238 18.9336C13.752 19.1953 14.2109 19.3262 14.8008 19.3262C15.3828 19.3262 15.8359 19.1895 16.1602 18.916C16.4844 18.6426 16.6465 18.2676 16.6465 17.791C16.6465 17.4121 16.4941 17.0762 16.1895 16.7832C15.8848 16.4863 15.3535 16.1992 14.5957 15.9219C14.0137 16.1719 13.5918 16.4492 13.3301 16.7539C13.0684 17.0547 12.9375 17.416 12.9375 17.8379ZM14.7773 12.1016C14.2891 12.1016 13.9062 12.2188 13.6289 12.4531C13.3516 12.6875 13.2129 13 13.2129 13.3906C13.2129 13.75 13.3281 14.0586 13.5586 14.3164C13.7891 14.5742 14.2148 14.832 14.8359 15.0898C15.3945 14.8555 15.7891 14.6035 16.0195 14.334C16.2539 14.0645 16.3711 13.75 16.3711 13.3906C16.3711 12.9961 16.2285 12.6836 15.9434 12.4531C15.6621 12.2188 15.2734 12.1016 14.7773 12.1016ZM22.0605 15.3652H24.4746V16.1738H22.0605V18.6699H21.2461V16.1738H18.8438V15.3652H21.2461V12.8574H22.0605V15.3652Z" fill="#A1A6B4"/>
-                            <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#A1A6B4"/>
-                            </svg>
+                        Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних <br> <span class="section-playlists__text_italic">© 2021 l W-Wave</span>  <br>
+
                      </p>
+                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.68945 20H7.74023V13.8945C7.74023 13.3867 7.75586 12.9062 7.78711 12.4531C7.70508 12.5352 7.61328 12.6211 7.51172 12.7109C7.41016 12.8008 6.94531 13.1816 6.11719 13.8535L5.60156 13.1855L7.86914 11.4336H8.68945V20ZM14.7891 11.3105C15.5703 11.3105 16.1895 11.4922 16.6465 11.8555C17.1035 12.2188 17.332 12.7207 17.332 13.3613C17.332 13.7832 17.2012 14.168 16.9395 14.5156C16.6777 14.8633 16.2598 15.1797 15.6855 15.4648C16.3809 15.7969 16.875 16.1465 17.168 16.5137C17.4609 16.877 17.6074 17.2988 17.6074 17.7793C17.6074 18.4902 17.3594 19.0586 16.8633 19.4844C16.3672 19.9062 15.6875 20.1172 14.8242 20.1172C13.9102 20.1172 13.207 19.918 12.7148 19.5195C12.2227 19.1172 11.9766 18.5488 11.9766 17.8145C11.9766 16.834 12.5742 16.0703 13.7695 15.5234C13.2305 15.2188 12.8438 14.8906 12.6094 14.5391C12.375 14.1836 12.2578 13.7871 12.2578 13.3496C12.2578 12.7285 12.4863 12.2344 12.9434 11.8672C13.4043 11.4961 14.0195 11.3105 14.7891 11.3105ZM12.9375 17.8379C12.9375 18.3066 13.0996 18.6719 13.4238 18.9336C13.752 19.1953 14.2109 19.3262 14.8008 19.3262C15.3828 19.3262 15.8359 19.1895 16.1602 18.916C16.4844 18.6426 16.6465 18.2676 16.6465 17.791C16.6465 17.4121 16.4941 17.0762 16.1895 16.7832C15.8848 16.4863 15.3535 16.1992 14.5957 15.9219C14.0137 16.1719 13.5918 16.4492 13.3301 16.7539C13.0684 17.0547 12.9375 17.416 12.9375 17.8379ZM14.7773 12.1016C14.2891 12.1016 13.9062 12.2188 13.6289 12.4531C13.3516 12.6875 13.2129 13 13.2129 13.3906C13.2129 13.75 13.3281 14.0586 13.5586 14.3164C13.7891 14.5742 14.2148 14.832 14.8359 15.0898C15.3945 14.8555 15.7891 14.6035 16.0195 14.334C16.2539 14.0645 16.3711 13.75 16.3711 13.3906C16.3711 12.9961 16.2285 12.6836 15.9434 12.4531C15.6621 12.2188 15.2734 12.1016 14.7773 12.1016ZM22.0605 15.3652H24.4746V16.1738H22.0605V18.6699H21.2461V16.1738H18.8438V15.3652H21.2461V12.8574H22.0605V15.3652Z" fill="#A1A6B4"/>
+                        <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#A1A6B4"/>
+                        </svg>
 
                 </div>
                 <div class="section-playlists__right-block">
-                    <ul class="section-playlists__music-list">
-                        <li class="seection-playlists__music-item">
+                    <ul class="section-playlists__music-list flex">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img1.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Ploho</h5>
                                 <p class="section-playlists__music-adv">3 последних альбома</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img2.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Molchat Doma</h5>
                                 <p class="section-playlists__music-adv">Все песни</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img3.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Motorama</h5>
                                 <p class="section-playlists__music-adv">Все синглы</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img4.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Human Tetris</h5>
                                 <p class="section-playlists__music-adv">3 последних альбома</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img5.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Буерак</h5>
                                 <p class="section-playlists__music-adv">Все EP</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img6.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Июльские Дни</h5>
                                 <p class="section-playlists__music-adv">Альбом «Колокол»</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img7.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Joy Division</h5>
                                 <p class="section-playlists__music-adv">Лучшее за всё время</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img8.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">The Cure</h5>
                                 <p class="section-playlists__music-adv">Лучшее за всё время</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img9.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">The Smiths</h5>
                                 <p class="section-playlists__music-adv">Период 1984–1988</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img10.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">New Order</h5>
                                 <p class="section-playlists__music-adv">Хиты</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img11.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Bauhaus</h5>
                                 <p class="section-playlists__music-adv">Все синглы</p>
                             </div>
                         </li>
-                        <li class="seection-playlists__music-item">
+                        <li class="section-playlists__music-item">
                             <img src="/img/music-img12.jpg" alt="Обложка альбома" class="section-playlists__music-img">
                             <div class="section-playlists__name-block">
                                 <h5 class="section-playlists__music-name">Gang Of Four</h5>
