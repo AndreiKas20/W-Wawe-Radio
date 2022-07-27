@@ -154,8 +154,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 405px;
-  max-width: 1920px;
+  padding: 0 45px;
+  max-width: 1200px;
 }
 
 .flex {
@@ -823,6 +823,7 @@ body {
 
 .section-playlists {
   padding: var(--paddingSection);
+  padding-bottom: 65px;
 }
 
 .section-playlists__title {
@@ -929,10 +930,12 @@ body {
 /* Стилизация radio */
 .section-playlists__playlists-type {
   position: relative;
+  display: inline-block;
+  cursor: pointer;
+
 }
 
 .section-playlists__radio {
-  position: relative;
   display: none;
   font-weight: 400;
   font-size: 16px;
@@ -959,3 +962,83 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.section-playlists__radio[type="radio"]:checked+span::before {
+  border: 7px solid var(--colorSemiPurple-6D31EE);
+}
+/* Конец стилизации radio */
+
+.section-sale {
+  padding: var(--paddingSection);
+  background-color: var(--colorSeniBlack-292E39);
+  padding-bottom: 143px;
+}
+
+.section-sale__left-block {
+  position: relative;
+  /* flex-basis: 58%; */
+  margin-right: 30px;
+}
+
+.section-sale__right-block {
+  /* flex-basis: 42%; */
+  max-width: 445px;
+}
+
+.section-sale__title {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: var(--fontSize-Title-48px);
+  line-height: 100%;
+  color: var(--colorSemiBrown-F0D288);
+}
+
+.section-sale__text {
+  font-weight: 400;
+  font-size: var(--fontSize-normal-16px);
+  line-height: 180%;
+  color: var(--colorWhite-FFF);
+}
+
+.section-sale__text:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.section-sale__text-block {
+  margin-bottom: 32px;
+}
+
+.section-sale__price {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--colorWhite-FFF);
+}
+
+.section-sale__ico-new {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.section-sale__link-market {
+  padding: 25px 13px 25px 13px;
+  border: solid 2px var(--colorSemiBrown-F0D288);
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: var(--fontSize-big-20px);
+  line-height: 100%;
+  color: var(--colorSemiBrown-F0D288);
+}
+
+.section-sale__ico-wave {
+  margin-bottom: 15px;
+}
+
+.section-sale__ico-market {
+  position: relative;
+  top: 3px;
+}
+
