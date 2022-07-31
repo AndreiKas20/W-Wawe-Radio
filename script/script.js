@@ -18,3 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 })
 //   
+
+// slide 
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+    },
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+});
