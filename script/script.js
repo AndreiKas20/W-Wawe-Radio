@@ -30,3 +30,27 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
 
 });
+// 
+
+let enterBtn = document.querySelector('.head-container__btn-input');
+let enterBlock = document.querySelector('.head-container__entrance-block');
+
+
+enterBtn.addEventListener('click', function() {
+  enterBlock.classList.toggle('head-container__entrance-block--active')
+});
+
+let escBlock = document.querySelector('.head-container__btn-esc-entr');
+
+escBlock.addEventListener('click', function() {
+  enterBlock.classList.remove('head-container__entrance-block--active');
+});
+
+let serchBtn = document.querySelector('.head-container__btn-search');
+let blockSearch = document.querySelector('.head-container__search-block')
+
+serchBtn.addEventListener('click', function() {
+  blockSearch.classList.add('head-container__search-block--active')
+})
+
+let body = document.querySelector('.head-container')
