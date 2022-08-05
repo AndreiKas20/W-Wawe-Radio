@@ -1435,9 +1435,120 @@ body {
 
 .section-playlists__btn-play {
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 59px;
+  left: 59px;
   border: none;
+}
+
+.section-playlists__btn-play {
+  display: none;
+}
+
+.section-podcast__ico-play {
+  display: none;
+}
+
+.section-playlists__big-play-ico {
+  display: none;
+}
+
+.section-playlists__name-block {
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.section-playlists__music-img {
+  position: relative;
+  transition: opcity .3s ease-in-out;
+} 
+
+.section-playlists__music-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  opacity: 0;
+  background-color: var(--colorBlack-121723);
+  transition: opacity .3s ease-in-out;
+  z-index: 2;
+}
+
+.section-playlists__music-item:focus::before {
+  opacity: 0.8;
+}
+
+.section-playlists__music-item:hover::before {
+  opacity: 0.8;
+}
+
+.section-playlists__music-item:focus .section-playlists__name-block {
+  background-color: var(--colorLightPurple-AA9DFA);
+}
+
+.section-playlists__music-item:focus .section-podcast__ico-play {
+  /* display: block; */
+  z-index: 3;
+}
+
+.section-playlists__music-item:focus .section-playlists__btn-play {
+  display: block;
+  z-index: 3;
+}
+
+.section-playlists__music-item:focus .section-playlists__name-block {
+  background-color: var(--colorLightPurple-AA9DFA);
+  border-color: var(--colorLightPurple-AA9DFA);
+}
+
+.section-playlists__music-item:hover .section-podcast__ico-play {
+  display: block;
+  z-index: 3;
+}
+
+.section-playlists__music-item:hover .section-playlists__btn-play {
+  display: block;
+  z-index: 3;
+}
+
+.section-playlists__music-item:active .section-playlists__big-play-ico {
+  display: block;
+  z-index: 3;
+}
+
+.section-playlists__music-item:active .section-playlists__ico-play {
+  display: none;
+  z-index: 3;
+}
+
+.section-playlists__music-item:hover .section-playlists__name-block {
+  background-color: var(--colorLightPurple-AA9DFA);
+  border-color: var(--colorLightPurple-AA9DFA);
+}
+
+.section-playlists__music-item:active .section-playlists__name-block {
+  background-color: var(--colorPurple-4F28A5);
+  border-color: var(--colorPurple-4F28A5);
+}
+
+.section-playlists__music-adv {
+  transition: color .3s ease-in-out;
+}
+
+.section-playlists__music-item:focus .section-playlists__music-adv {
+  color: var(--colorBlack-121723);
+}
+
+.section-playlists__music-item:hover .section-playlists__music-adv {
+  color: var(--colorWhite-FFF);
+}
+
+.section-playlists__music-name {
+  transition: color .3s ease-in-out;
+}
+
+.section-playlists__music-item:hover .section-playlists__music-name {
+  color: var(--colorWhite-FFF);
 }
 
 .section-playlistst__item:not(:last-child) {
@@ -1477,6 +1588,7 @@ body {
 }
 
 .section-playlists__music-item {
+  cursor: pointer;
   position: relative;
   /* flex-basis: 21.3%; */
   margin-right: 30px;
