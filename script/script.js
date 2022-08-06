@@ -30,6 +30,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
 
 });
+
 // 
 // Блок входа
 let enterBtn = document.querySelector('.head-container__btn-input');
@@ -104,5 +105,23 @@ btnPlayPodcast.forEach(function(el) {
 })
 // Как сделать сброс?
 // 
+
+// Выбор по клику 
+
+let tabsLink = document.querySelectorAll ('.section-guests__blogers-sub-item');
+let tabsItem = document.querySelectorAll ('.section-guests__rightn-block');
+
+tabsLink.forEach(function(element){
+  element.addEventListener('click', function(e){
+    const path = e.currentTarget.dataset.path;
+
+    tabsLink.forEach(function(btn){ btn.classList.remove('section-guests__blogers-sub-item--active')});
+    e.currentTarget.classList.add('section-guests__blogers-sub-item--active');
+
+    tabsItem.forEach(function(element){ element.classList.remove('section-guests__rightn-block--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('section-guests__rightn-block--active');
+
+  });
+})
 
  

@@ -1084,6 +1084,11 @@ body {
 .section-guests__rightn-block {
   flex-basis: 31.5%;
   justify-content: flex-end;
+  display: none;
+}
+
+.section-guests__rightn-block--active {
+  display: block;
 }
 
 .section-guests__subtitle {
@@ -1313,10 +1318,31 @@ body {
 }
 
 .section-guests__blogers-sub-item {
+  cursor: pointer;
   font-weight: 400;
   font-size: var(--fontSize-normal-16px);
   line-height: 16px;
   color: var(--colorWhite-FFF);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.section-guests__blogers-sub-item--active {
+  color: var(--colorLightPurple-AA9DFA);
+}
+
+.section-guests__blogers-sub-item:focus {
+  background-color: var(--colorLightPurple-AA9DFA);
+  color: var(--colorWhite-FFF);
+}
+
+.section-guests__blogers-sub-item:hover {
+  background: none;
+  color: var(--colorSemiPurple-6D31EE);
+}
+
+.section-guests__blogers-sub-item:active {
+  background: none;
+  color: var(--colorPurple-4F28A5);
 }
 
 .section-guests__blogers-sub-item:not(:last-child) {
@@ -1375,11 +1401,11 @@ body {
   cursor: pointer;
 }
 
-.section-guests__ac-item:active .section-guests__ico-arr circle {
+.section-guests__ac-top:active .section-guests__ico-arr circle {
   fill: var(--colorLightPurple-AA9DFA);
 }
 
-.section-guests__ac-item:active .section-guests__ico-arr path {
+.section-guests__ac-top:active .section-guests__ico-arr path {
   stroke: var(--colorWhite-FFF);
 }
 
@@ -1441,10 +1467,6 @@ body {
 }
 
 .section-playlists__btn-play {
-  display: none;
-}
-
-.section-podcast__ico-play {
   display: none;
 }
 
@@ -1657,7 +1679,7 @@ body {
   border-radius: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: border .3s ease-in-out;
+  transition: border .2s ease-in-out;
 }
 
 .section-playlists__radio[type="radio"]:checked+span::before {
