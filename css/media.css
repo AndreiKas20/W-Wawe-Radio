@@ -1,0 +1,164 @@
+@media (max-width: 1300px) {
+    .swiper-slide {
+        background-size: auto;
+    }
+
+    .section-about-us__nav-btn-next {
+        right: 0;
+    }
+
+    .section-about-us__nav-btn-prev {
+        left: 0;
+    }
+}
+
+@media (max-width: 1197px) {
+    .section-about-us__ico-dec:first-child {
+        display: none;
+    }
+
+    .section-broadcast__brodcast-item:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+
+    .section-playlists__music-item:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+
+    .head-container__ico-12 {
+        display: none;
+    }
+
+    .section-podcast__item:not(:nth-child(2n)) {
+        margin-right: 2.71%;
+    }
+
+    .head-container {
+        padding-top: 0;
+    }
+
+    .head-container {
+        padding-top: 0;
+    }
+    .head-container::after {
+        top: 149px;
+    }
+
+    .head-container::before {
+        top: 209px;
+    }
+
+    .head-container__top-block1197w {
+        display: block;
+        padding: 22px 0;       
+        background-color: #f2f2f2;
+    }
+
+    .head-container__ico-link {
+        display: none;
+    }
+
+    .head-container__block-bottom {
+        padding-top: 5px;
+    }
+
+    .head-container__block-top {
+        padding: 20px 0;
+    }
+
+    .head-container__item-bottom {
+        margin-right: 27px;
+    }
+
+    .head-container__nav-bottom {
+        margin-right: auto;
+    }
+
+    .section-about-us__swiper-slide1 {
+        background-image: url(../img/swipe-foto-1024-1.jpg);
+    }
+      
+    .section-about-us__swiper-slide2 {
+        background-image: url(../img/swipe-foto-1024-2.jpg);
+    }
+      
+    .section-about-us__swiper-slide3 {
+        background-image: url(../img/swipe-foto-1024-3.jpg);
+    }
+      
+    .section-about-us__swiper-slide4 {
+        background-image: url(../img/swipe-foto-1024-4.jpg);
+    }
+      
+    .section-about-us__swiper-slide5 {
+        background-image: url(../img/swipe-foto-1024-5.jpg);
+    }
+      
+    .section-about-us__swiper-slide6 {
+        background-image: url(../img/swipe-foto-1024-6.jpg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .head-container__block-top {
+        padding: 17px 0;
+    }
+
+    .head-container__item-bottom {
+        margin-right: 28px;
+    }
+
+    .head-container__block-bottom {
+        padding-top: 14px;
+    }
+
+    .head-container::before {
+        top: 199px;
+    }
+
+    .head-container::after {
+        top: 141px;
+    }
+
+    .head-container__nav-bottom {
+        margin-right: 15px;
+    }
+
+    .head-cotainer__mus-right {
+        min-width: 89px;
+    }
+
+    .head-container__music-block-before {
+        margin-right: 29px;
+    }
+
+    .head-container__btn-input {
+        padding: 10px 32px;
+    }
+
+    .head-container__music-block-live::before {
+        top: -10px;
+        left: 135px;
+    }
+
+    .head-container__music-block-before::after {
+        right: -16px;
+        bottom: 5px;
+    }
+
+    .head-container__music-block-before::before {
+        top: -9px;
+        left: -12px;
+    }
+    /*  */
+    .section-about-us__input_big-heght {
+        width: 796px;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+    /*  */
+}

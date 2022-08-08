@@ -20,16 +20,47 @@ document.addEventListener("DOMContentLoaded", function() {
 //   
 
 // slide 
-const swiper = new Swiper('.swiper', {
-  speed: 400,
-  navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
-    },
-  slidesPerView: 4,
-  spaceBetween: 30,
 
-});
+
+var wi = window.innerWidth;
+if (wi < 1300) { 
+  if(wi < 1197) {
+    const swiper = new Swiper('.swiper', {
+      speed: 400,
+      navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+        },
+      slidesPerView: 2,
+      spaceBetween: 30,
+    
+    });
+  } else {
+    const swiper = new Swiper('.swiper', {
+      speed: 400,
+      navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+        },
+      slidesPerView: 3,
+      spaceBetween: 170,
+    
+    });
+  }
+} else {
+  const swiper = new Swiper('.swiper', {
+    speed: 400,
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+      },
+    slidesPerView: 4,
+    spaceBetween: 30,
+  
+  });
+}
+
+
 
 // 
 // Блок входа

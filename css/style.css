@@ -169,7 +169,9 @@ body {
   padding-bottom: 22px;
 }
 
-
+.head-container__top-block1197w {
+  display: none;
+}
 
 .head-container__entrance-block {
   position: absolute;
@@ -1613,13 +1615,13 @@ body {
   cursor: pointer;
   position: relative;
   /* flex-basis: 21.3%; */
-  margin-right: 30px;
+  margin-right: 0;
   margin-bottom: 28px;
   font-size: 0;
 }
 
-.section-playlists__music-item:nth-child(4n) {
-  margin-right: 0;
+.section-playlists__music-item:not(:nth-child(4n)) {
+  margin-right: 30px;
 }
 
 .section-playlists__music-name {
