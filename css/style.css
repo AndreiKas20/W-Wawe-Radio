@@ -1326,6 +1326,12 @@ body {
   line-height: 16px;
   color: var(--colorWhite-FFF);
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  margin-right: 0px;
+  flex-basis: 22%;
+}
+
+.section-guests__blogers-sub-item:not(:nth-child(4n)) {
+  margin-right: 29px;
 }
 
 .section-guests__blogers-sub-item--active {
@@ -1353,6 +1359,7 @@ body {
 
 .section-guests__blogers-sub-list {
   padding: 30px 0;
+  flex-wrap: wrap;
 }
 
 .section-guests__blogers-sub-list:not(:last-child) {
@@ -1637,6 +1644,10 @@ body {
   font-size: var(--fonSize-verySmall-12px);
   line-height: 12px;
   color: var(--colorGray-A1A6B4);
+}
+
+.section-playlists__adv-block-1024 {
+  display: none;
 }
 
 /* Стилизация radio */
@@ -2151,4 +2162,8 @@ margin-right: 20px;
 .footer__ico-bot {
   width: 100%;
   margin-bottom: 5px;
+}
+
+.footer__ico-bot-1024 {
+  display: none;
 }
