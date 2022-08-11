@@ -154,5 +154,27 @@ tabsLink.forEach(function(element){
 
   });
 })
+// 
+// Бургер
+let burger = document.querySelector(".head-container__burger");
+let menu = document.querySelector(".head-container__nav-burger");
+let menuLinks = menu.querySelectorAll(".head-container__link-burger");
 
+burger.addEventListener("click",
+function() {
+  burger.classList.toggle("head-container__burger--active");
+
+  menu.classList.toggle("head-container__nav-burger--active");
+})
+
+menuLinks.forEach(function(el){
+  el.addEventListener("click", function(){
+
+    burger.classList.remove("head-container__burger--active");
+
+    menu.classList.remove("head-container__nav-burger--active");
+
+  })
+})
+// 
  

@@ -10,6 +10,7 @@
     .section-about-us__nav-btn-prev {
         left: 0;
     }
+
 }
 
 @media (max-width: 1197px) {
@@ -97,9 +98,7 @@
     .section-about-us__swiper-slide6 {
         background-image: url(../img/swipe-foto-1024-6.jpg);
     }
-}
 
-@media (max-width: 1193px) {
     .section-guests__blogers-sub-item:not(:nth-child(4n)) {
         margin-right:  0px;
       }
@@ -132,6 +131,14 @@
 
     .section-guests__subtitle {
         padding: 34.4px 0;
+    }
+
+    .head-container__search-block--active {
+        max-width: 25%;
+    }
+
+    .head-container__search-block {
+        left: 575px;
     }
 }
 
@@ -432,6 +439,43 @@
 
     .footer__ico-bot-1024 {
         display: inline-block;   
+        width: 100%;
     }
-    /*  */
+
+    .section-podcast__item::after {
+        width: 72%;
+    }
+
+    .head-container__search-block {
+        left: 488px;
+    }
+}
+
+@media (max-width: 1022px) {
+    .section-podcast__item:not(:nth-child(2n)) {
+        margin-right: 0;
+    }
+
+    .section-podcast__list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 28px;
+    }
+
+    .section-guests__bot-block {
+        flex-direction: column;
+    }
+
+    .section-guests__left-block {
+        margin-bottom: 50px;
+    }
+
+    .head-container__nav-top {
+        display: none;
+    }
+
+    .head-container__burger {
+        display: block;
+        margin-right: auto;
+    }
 }
