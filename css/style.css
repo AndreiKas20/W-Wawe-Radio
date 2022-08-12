@@ -249,7 +249,7 @@ body {
 .head-container__burger-span:before {
   left: 0;
   position: absolute;
-  top: -8px;
+  top: -11px;
   height: 3px;
   width: 24px;
   background-color: var(--colorSemiPurple-6D31EE);
@@ -261,7 +261,7 @@ body {
 .head-container__burger-span::after {
   left: 0;
   position: absolute;
-  top: 8px;
+  top: 11px;
   height: 3px;
   width: 24px;
   background-color: var(--colorSemiPurple-6D31EE);
@@ -500,6 +500,10 @@ body {
 
 .head-container__btn-search-block:active .head-container__btn-search-ico > path {
   stroke: var(--colorPurple-4F28A5);
+}
+
+.header-container__ico-play-1022 {
+  display: none;
 }
 
 .head-container__btn-input {
@@ -1112,6 +1116,10 @@ body {
   margin-bottom: 33px;
   width: 65px;
   height: 89px;
+}
+
+.section-broadcast__bottom-block-view-1022 {
+  display: none;
 }
 
 .section-broadcast__btn-block {

@@ -212,6 +212,18 @@
                         <h5 class="head-container__name-mus">«Как так?»</h5>
                     </div>
                 </div>
+                <div class="header-container__ico-play-1022">
+                    <div class="head-container__mus-left mus-left">
+                        <svg class="head-container__play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                        </svg>
+                        <svg class="head-container__pause" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+                            <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+                            <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+                            </svg>                            
+                     </div>
+                </div>
                 <svg class="head-container__ico-12" width="46" height="60" viewBox="0 0 46 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="46" height="60" fill="#E6E8EC"/>
                     <rect x="8" y="15" width="30" height="30" rx="15" fill="white"/>
@@ -690,7 +702,7 @@
             </div>
         </section>
         <section id="broadcast" class="section-broadcast">
-            <div class="container flex">
+            <div class="container section-broadcast__container flex">
                 <div class="section-broadcast__left-block flex">
                     <h2 class="section-broadcast__title">Передачи</h2>
                     <span class="section-broadcast__text-author">Автор</span>
@@ -700,18 +712,20 @@
                         <option value="value2">Анна Васильева</option>
                         <option value="value3">Пётр Дмитриевский</option>
                     </select>
-                    <img class="section-broadcast__img" src="img/microphone-broadcast.png" alt="картинка с микрофоном">
-                    <div class="section-broadcast__btn-block">
-                        <a href="#" class="section-broadcast__link-archive">
-                            <svg class="section-broadcast__link-archive-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M1.5 9L9 12.75L16.5 9" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Архив
-                        </a>
+                    <div class="section-broadcast__left-bottom-block">
+                        <img class="section-broadcast__img" src="img/microphone-broadcast.png" alt="картинка с микрофоном">
+                        <div class="section-broadcast__btn-block">
+                            <a href="#" class="section-broadcast__link-archive">
+                                <svg class="section-broadcast__link-archive-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.5 9L9 12.75L16.5 9" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Архив
+                            </a>
+                        </div>
+                        <p class="section_broadcast__text-link">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
                     </div>
-                    <p class="section_broadcast__text-link">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
                 </div>
                 <div class="section-broadcast__right-block">
                     <ul class="section-bradcast__broadcast-list flex">
@@ -801,6 +815,20 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="section-broadcast__bottom-block-view-1022">
+                    <img class="section-broadcast__img" src="img/microphone-broadcast.png" alt="картинка с микрофоном">
+                    <div class="section-broadcast__btn-block">
+                        <a href="#" class="section-broadcast__link-archive">
+                            <svg class="section-broadcast__link-archive-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 9L9 12.75L16.5 9" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Архив
+                        </a>
+                        <p class="section_broadcast__text-link">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1731,7 +1759,7 @@
             </div>
         </section>
         <section class="section-sale">
-            <div class="container flex">
+            <div class="container section-sale_container flex">
                 <div class="section-sale__left-block">
                     <svg class="section-sale__ico-new" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M151.975 89.6127C156.622 84.0465 156.622 75.9535 151.975 70.3873L146.225 63.4986C143.682 60.4529 142.45 56.5239 142.797 52.5716L143.592 43.5358C144.244 36.1224 139.362 29.3519 132.122 27.629L124.848 25.8981C120.783 24.9308 117.306 22.3119 115.254 18.6722L111.455 11.933C107.645 5.17474 99.3097 2.43713 92.2345 5.62002L86.1539 8.35543C82.2402 10.116 77.7598 10.116 73.8461 8.35543L67.7488 5.61247C60.6805 2.43274 52.3537 5.1615 48.5383 11.9079L44.7596 18.5893C42.6991 22.2327 39.21 24.8495 35.1354 25.8073L27.918 27.5038C20.6595 29.21 15.7563 35.9887 16.4078 43.4165L17.2057 52.5128C17.5514 56.4548 16.3255 60.3737 13.7949 63.4159L7.99347 70.3904C3.36298 75.9571 3.37009 84.037 8.01036 89.5956L13.7767 96.503C16.3185 99.5478 17.5509 103.475 17.2043 107.426L16.4046 116.543C15.7545 123.955 20.6362 130.724 27.8748 132.446L35.1634 134.181C39.2214 135.147 42.6941 137.758 44.7475 141.389L48.5209 148.061C52.3436 154.821 60.6929 157.545 67.7664 154.341L73.8322 151.594C77.7536 149.818 82.249 149.812 86.1749 151.578L92.2513 154.311C99.3195 157.491 107.646 154.762 111.462 148.016L115.252 141.313C117.306 137.682 120.779 135.07 124.837 134.105L132.122 132.371C139.362 130.648 144.244 123.878 143.592 116.464L142.797 107.428C142.45 103.476 143.682 99.5471 146.225 96.5014L151.975 89.6127Z" fill="#F0D288"/>

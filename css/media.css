@@ -478,4 +478,283 @@
         display: block;
         margin-right: auto;
     }
+
+    .section-broadcast__left-bottom-block {
+        display: none;
+    }
+
+    .section-broadcast__bottom-block-view-1022 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .choices[data-type*=select-one] {
+        max-width: 44%;
+    }
+
+    .section-broadcast__container  {
+        flex-direction: column;
+    }
+
+    .section-broadcast__left-block {
+        margin: 0;
+    }
+
+    .choices {
+        margin-bottom: 47px;
+    }
+
+    .section-bradcast__broadcast-list {
+        justify-content: center;
+    }
+
+    .section-broadcast__brodcast-item:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+
+    .section-broadcast__img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .section-broadcast__btn-block {
+        max-width: 255px;
+        margin: 0;
+    }
+
+    .section_broadcast__text-link {
+        margin-bottom: 0;
+    }
+
+    .section-broadcast__link-archive {
+        display: inline-block;
+    }
+
+    .section-broadcast__link-archive {
+        margin-bottom: 10px;
+    }
+
+    .header-container__ico-play-1022 {
+        display: block;
+    }
+
+    .head-container__music-block-live,
+    .head-container__music-block-before {
+        display: none;
+    }
+
+    .head-container__nav-bottom {
+        margin-right: auto;
+    }
+
+    .section-about-us__ico-dec {
+        width: 113px;
+    }
+
+    .section-about-us__input_big-heght {
+        width: 540px;
+    }
+
+    .section-about-us__form-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-container__entrance-block {
+        left: 14%;
+        z-index: 4;
+    }
+
+    .section-playlists__music-item:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+
+    .section-playlists__music-list {
+        justify-content: center;
+    }
+
+    .section-playlists__music-item {
+        flex-basis: 47.1%;
+    }
+
+    .section-sale_container {
+        flex-direction: column;
+    }
+
+    .section-sale {
+        padding-top: 53px;
+    }
+
+    .section-sale__left-block {
+        top: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .section-sale__text-block {
+        margin-bottom: 32px;
+        width: 134%;
+    }
+
+    .section-about-us__lt-block {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .section-about-us__nav-btn {
+        top: 751px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 114px;
+    }
+
+    .head-container__top-block1197w {
+        padding: 19px 0;
+    }
+
+    .head-container__block-top {
+        padding-top: 21px;
+        padding-bottom: 19px;
+    }
+
+    .head-container__burger {
+        top: 11px;
+    }
+
+    .head-container::after {
+        top: 137px;
+    }
+
+    .head-container::before {
+        top: 196px;
+    }
+
+    .head-container__item-bottom {
+        margin-right: 29px;
+    }
+
+    .head-container__item-bottom:last-child {
+        margin: 0;
+    }
+
+    .head-container__nav-bottom {
+        margin-right: 24px;
+    }
+
+    .section-live {
+        padding-top: 86px;
+        padding-bottom: 89px;
+    }
+
+    .section-live__right-block {
+        display: none;
+    }
+
+    .section-live__left-block {
+        flex-basis: 97%;
+        margin-right: 0;
+    }
+
+    .section-podcast__btn-play {
+        right: 5%;
+    }
+    
+    .choices[data-type*=select-one] {
+        max-width: 46.1%;
+    }
+
+    .choices {
+        margin-bottom: 29px;
+    }
+    
+    .section-broadcast__right-block {
+        margin-bottom: 30px;
+    }
+
+    .section-broadcast__right-block {
+        margin-bottom: 61px;
+    }
+
+    .section-broadcast__link-archive {
+        padding: 7px 46px;
+    }
+
+    .section-broadcast__img {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    .section-broadcast {
+        padding-bottom: 29px;
+    }
+
+    .section-guests__sub-text {
+        max-width: 100%;
+    }
+
+    .section-guests__blogers-sub-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .section-guests__blogers-sub-list {
+        padding-bottom: 0px;
+    }
+
+    .section-guests__foto-guests {
+        margin-bottom: 9px;
+    }
+
+    .section-guests__guests-text {
+        max-width: 75%;
+    }
+
+    .section-guests {
+        padding-bottom: 94px;
+    }
+
+    .section-playlists__list {
+        margin-bottom: 3px;
+    }
+
+    .section-playlistst__item:not(:last-child) {
+        margin-bottom: 40px;
+        margin-right: 38px;
+    }
+
+    .section-playlists__list {
+        max-height: 249px;
+    }
+
+    .section-playlists__music-list {
+        font-size: 0;
+    }
+
+    .section-playlists__name-block {
+        padding: 9px;
+    }
+
+    .section-sale__ico-new {
+        width: 30%;
+        left: 0px;
+        top: 2px;
+    }
+
+    .section-sale__title {
+        margin-bottom: 15px;
+    }
+
+    .section-guests__title {
+        margin-bottom: 14px;
+    }
+
+    .head-container__search-block {
+        left: 208px;
+    }
 }
