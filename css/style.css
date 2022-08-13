@@ -1977,6 +1977,10 @@ margin-right: 20px;
   top: -19px;
 }
 
+.section-about-us__ico-block-768 {
+  display: none;
+}
+
 .section-about-us__lt-block {
   max-width: 57.5%;
   margin-right: 30px;
@@ -2249,6 +2253,10 @@ margin-right: 20px;
   margin-right: 109px;
 }
 
+.footer__social-block-768 {
+  display: none;
+}
+
 .footer__item {
   font-weight: 400;
   font-size: var(--fontSize-normal-16px);
@@ -2290,5 +2298,9 @@ margin-right: 20px;
 }
 
 .footer__ico-bot-1024 {
+  display: none;
+}
+
+.footer__ico-bot-768 {
   display: none;
 }
