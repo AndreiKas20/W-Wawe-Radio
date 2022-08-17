@@ -178,3 +178,12 @@ menuLinks.forEach(function(el){
 })
 // 
  
+// Что в эфире 
+let whatAirBtn = document.querySelector('.head-container__what-air-block-600');
+let blockWhatAir = document.querySelector('.head-container__what-air-open');
+
+whatAirBtn.addEventListener('click', function(){
+  blockWhatAir.classList.toggle('head-container__what-air-open--active');
+  whatAirBtn.classList.toggle('head-container__what-air-block-600--active');
+})
+// 

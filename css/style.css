@@ -177,10 +177,14 @@ body {
   background-color: var(--colorSemiGray-D2D5DD);
   height: 70vh;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   transform: translateY(-120%);
   transition: visibility .3s ease-in-out, transform .3s ease-in-out;
   visibility: hidden;
+}
+
+.head-container__what-air-open {
+  display: none;
 }
 
 .head-container__nav-burger--active {
@@ -191,6 +195,10 @@ body {
 .head-container__list-burger {
   columns: 2;
   max-width: 60%;
+}
+
+.head-container__list-bottom-burger {
+  display: none;
 }
 
 .head-container__list-burger::after {
@@ -392,6 +400,9 @@ body {
   color: var(--colorWhite-FFF);
 }
 
+.head-container__what-air-block-600 {
+  display: none;
+}
 
 .head-container__entr-adv-social-link:first-of-type {
   position: relative;
