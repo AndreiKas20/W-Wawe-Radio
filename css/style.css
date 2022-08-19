@@ -315,6 +315,10 @@ body {
   transform: none
 }
 
+.head-container-logo459-ico {
+  display: none;
+}
+
 .head-container__entrance-block::after {
   content: '';
   position: absolute;
@@ -668,6 +672,14 @@ body {
 
 .head-container__play--no-active {
   display: none;
+}
+
+.head-container__ico-what-air {
+  transition: transform .3s ease-in-out;
+}
+
+.head-container__what-air-block-600--active .head-container__ico-what-air {
+  transform: rotate(45deg);
 }
 
 .head-container__adv-text-mus {
@@ -1611,6 +1623,12 @@ body {
   border: none;
 }
 
+.section-playlists__adv-ico-country {
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+
 .section-playlists__btn-play {
   display: none;
 }
@@ -1746,6 +1764,11 @@ body {
 }
 
 .section-playlists__text_italic {
+  display: block;
+  font-weight: 400;
+  font-size: var(--fontSize-normal-16px);
+  line-height: 22px;
+  color: var(--colorGray-A1A6B4);
   font-style: italic;
 }
 
@@ -1831,6 +1854,10 @@ body {
   transition: border .2s ease-in-out;
 }
 
+.section-playlists__scroll-type {
+  display: none;
+}
+
 .section-playlists__radio[type="radio"]:checked+span::before {
   border: 7px solid var(--colorSemiPurple-6D31EE);
 }
@@ -1889,6 +1916,10 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+.section-sale__ico-wave-459 {
+  display: none;
 }
 
 .section-sale__link-market {
@@ -2118,19 +2149,15 @@ margin-right: 20px;
 }
 
 .section-about-us__input {
-  width: 445px;
-  height: 70px;
-  background-color: var(--colorBlack-121723);
-  border-radius: 30px;
-  border: 1px solid var(--colorWhite-FFF);
-}
-
-.section-about-us__input {
   padding: 32px 30px;
   font-weight: 400;
   font-size: var(--fontSize-big-20px);
   line-height: 100%;
   color: var(--colorGray-A1A6B4);
+  width: 445px;
+  background-color: var(--colorBlack-121723);
+  border-radius: 30px;
+  border: 1px solid var(--colorWhite-FFF);
 }
 
 .section-about-us__input:first-child {
@@ -2313,5 +2340,13 @@ margin-right: 20px;
 }
 
 .footer__ico-bot-768 {
+  display: none;
+}
+
+.footer__block-459 {
+  display: none;
+}
+
+.footer__ico-bot-459 {
   display: none;
 }

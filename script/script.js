@@ -9,11 +9,11 @@ const choices = new Choices(element, {
 
 // Aккордион 
 document.addEventListener("DOMContentLoaded", function() {
-  let acc = new Accordion('.accordion__list', {
+  let acc = new Accordion('.accordion-list', {
   duration: 700,
-  elementClass: 'accordion__item',
-  triggerClass: 'accordion__top',
-  panelClass: 'accordion__bottom',
+  elementClass: 'accordion-item',
+  triggerClass: 'accordion-top',
+  panelClass: 'accordion-bottom',
   showMultiple: false
 });
 })
@@ -25,16 +25,29 @@ document.addEventListener("DOMContentLoaded", function() {
 var wi = window.innerWidth;
 if (wi < 1300) { 
   if(wi < 1197) {
-    const swiper = new Swiper('.swiper', {
-      speed: 400,
-      navigation: {
-        nextEl: '.button-next',
-        prevEl: '.button-prev',
-        },
-      slidesPerView: 2,
-      spaceBetween: 30,
-    
-    });
+    if (wi < 460) {
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+          },
+        slidesPerView: 2.3,
+        spaceBetween: 17,
+      
+      });
+    } else {
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+          },
+        slidesPerView: 2,
+        spaceBetween: 30,
+      
+      });
+    }
   } else {
     const swiper = new Swiper('.swiper', {
       speed: 400,
@@ -100,10 +113,14 @@ main.addEventListener('click', function(e) {
 // Добавление двух элементов
 let twoBlock = document.querySelectorAll('.section-podcast__item--no-active');
 let btnAddBlock = document.querySelector('.section-podcast__btn');
+let fourBlock = document.querySelectorAll('.section-podcast__item-459--no-active')
 
 btnAddBlock.addEventListener('click', function(){
   twoBlock.forEach(function(el){
     el.classList.remove("section-podcast__item--no-active");
+  });
+  fourBlock.forEach(function(el){
+    el.classList.remove("section-podcast__item-459--no-active");
   })
 })
 // 
@@ -127,11 +144,11 @@ let btnPlayPodcast = document.querySelectorAll('.section-podcast__btn-play');
 
 btnPlayPodcast.forEach(function(el) {
   let play = el.querySelector('.section-podcast__ico-play');
-  let pause = el.querySelector('.section_podcast__ico-pause');
+  let pause = el.querySelector('.section-podcast__ico-pause');
 
   el.addEventListener('click', function() {
     play.classList.toggle('section-podcast__ico-play--no-active')
-    pause.classList.toggle('section_podcast__ico-pause--active')
+    pause.classList.toggle('section-podcast__ico-pause--active')
   })
 })
 // Как сделать сброс?
