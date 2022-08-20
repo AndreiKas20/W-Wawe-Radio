@@ -1,4 +1,6 @@
+
 @media (max-width: 1300px) {
+
     .swiper-slide {
         background-size: auto;
     }
@@ -11,9 +13,6 @@
         left: 0;
     }
 
-}
-
-@media (max-width: 1197px) {
     .section-about-us__ico-dec:first-child {
         display: none;
     }
@@ -143,8 +142,16 @@
 }
 
 @media (max-width: 1024px) {
+
     .container {
         padding: 0 100px;
+    }
+
+    .section-playlists__adv-ico-country {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0%;
     }
 
     .head-container__block-top {
@@ -413,6 +420,7 @@
 
     .section-about-us__input {
         width: 395px;
+        padding: 23px 30px;
     }
 
     .section-about-us__input_big-heght {
@@ -442,10 +450,6 @@
         width: 100%;
     }
 
-    .section-podcast__item::after {
-        width: 72%;
-    }
-
     .head-container__search-block {
         left: 488px;
     }
@@ -458,15 +462,20 @@
         top: 29%;
         left: 14%;
     }
-}
 
-@media (max-width: 1022px) {
     .section-playlists__music-item::before {
         width: 100%;
     }
+}
 
+@media (max-width: 1022px) {
+    
     .section-podcast__item:not(:nth-child(2n)) {
         margin-right: 0;
+    }
+
+    .head-container__search-block {
+        left: 238px;
     }
 
     .section-podcast__list {
@@ -616,10 +625,10 @@
     }
 
     .section-about-us__nav-btn {
-        top: 751px;
+        top: 628px;
     }
-}
 
+}
 
 @media (max-width: 768px) {
     .container {
@@ -803,10 +812,6 @@
         margin-bottom: -6px;
     }
 
-    .section-about-us__nav-btn {
-        top: 627px;
-    }
-
     .section-about-us__nav-btn-prev {
         left: 48px;
     }
@@ -821,11 +826,12 @@
 
     .section-about-us__input:first-child {
         margin-right: 0;
-        margin-bottom: 27px;
+        margin-bottom: 22px;
     }
 
     .section-about-us__input {
         width: 538px;
+        padding: 26px 31px;
     }
 
     .section-about-us__swiper-slide1 {
@@ -941,6 +947,14 @@
 }
 
 @media (max-width: 600px) {
+
+    .section-playlists__adv-ico-country {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+    }
+
     .head-container__nav-bottom {
         display: none;
     }
@@ -1234,19 +1248,6 @@
     .section-playlists__left-block {
     margin-right: 0;
     }
-      
-    /* .section-playlists__music-list {
-        display: block;
-        columns: 2;
-    }
-
-    .section-playlists__name-block {
-        width: 112px;
-    }
-
-    .section-playlists__music-item {
-        text-align: start;
-    } */
 }
 
 @media (max-width: 459px) {
@@ -1307,6 +1308,7 @@
     }
 
     .head-container__entr-btn {
+        padding: 25px 54px;
         margin-bottom: 60px;
         padding: 12px 56px;
         font-size: 16px;
@@ -1864,7 +1866,7 @@
     .section-about-us__swiper {
         margin-bottom: 50px;
         position: relative;
-        width: 112%;
+        width: 100%;
     }
 
     .section-about-us__name {
@@ -1914,7 +1916,8 @@
     }
 
     .footer__ico-bot-459 {
-        display: block;
+        display: inline-block;
+        width: 100%;
         margin-bottom: 9px;
     }
 

@@ -9,11 +9,11 @@ const choices = new Choices(element, {
 
 // Aккордион 
 document.addEventListener("DOMContentLoaded", function() {
-  let acc = new Accordion('.accordion-list', {
+  let acc = new Accordion('.accordion__list', {
   duration: 700,
-  elementClass: 'accordion-item',
-  triggerClass: 'accordion-top',
-  panelClass: 'accordion-bottom',
+  elementClass: 'accordion__item',
+  triggerClass: 'accordion__top',
+  panelClass: 'accordion__bottom',
   showMultiple: false
 });
 })
@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
 var wi = window.innerWidth;
 if (wi < 1300) { 
   if(wi < 1197) {
-    if (wi < 460) {
+    if (wi < 400) {
       const swiper = new Swiper('.swiper', {
         speed: 400,
         navigation: {
           nextEl: '.button-next',
           prevEl: '.button-prev',
           },
-        slidesPerView: 2.3,
+        slidesPerView: 2.2,
         spaceBetween: 17,
       
       });
@@ -144,11 +144,11 @@ let btnPlayPodcast = document.querySelectorAll('.section-podcast__btn-play');
 
 btnPlayPodcast.forEach(function(el) {
   let play = el.querySelector('.section-podcast__ico-play');
-  let pause = el.querySelector('.section-podcast__ico-pause');
+  let pause = el.querySelector('.section_podcast__ico-pause');
 
   el.addEventListener('click', function() {
     play.classList.toggle('section-podcast__ico-play--no-active')
-    pause.classList.toggle('section-podcast__ico-pause--active')
+    pause.classList.toggle('section_podcast__ico-pause--active')
   })
 })
 // Как сделать сброс?
@@ -204,3 +204,7 @@ whatAirBtn.addEventListener('click', function(){
   whatAirBtn.classList.toggle('head-container__what-air-block-600--active');
 })
 // 
+
+// Активация подкаста на 459
+
+//

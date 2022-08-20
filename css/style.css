@@ -153,6 +153,10 @@ body {
   font-family: "Muller", Arial, Helvetica, sans-serif;
 }
 
+picture {
+  font-size: 0;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 45px;
@@ -759,6 +763,9 @@ body {
 .head-container__entr-btn {
   margin-bottom: 60px;
   padding: 25px 54px;
+  background: #6D31EE;
+  border-radius: 40px;
+  border: none;
 }
 
 .section-podcast {
@@ -811,7 +818,7 @@ body {
 .section-podcast__item::after {
   content: '';
   position: absolute;
-  width: 79%;
+  width: calc(100% - 112px);
   height: 1px;
   background-color: var(--colorLightGray-E6E8EC);
   top: 77%;
@@ -2149,14 +2156,14 @@ margin-right: 20px;
 }
 
 .section-about-us__input {
-  padding: 32px 30px;
+  padding: 25px 30px;
   font-weight: 400;
   font-size: var(--fontSize-big-20px);
   line-height: 100%;
   color: var(--colorGray-A1A6B4);
   width: 445px;
   background-color: var(--colorBlack-121723);
-  border-radius: 30px;
+  border-radius: 32px;
   border: 1px solid var(--colorWhite-FFF);
 }
 
