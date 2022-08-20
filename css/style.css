@@ -2403,3 +2403,12 @@ picture {
   position: relative;
   display: inline-block;
 }
+
+.section-about-us__form {
+  position: relative;
+}
+
+.section-about-us__input_big-heght + .js-validate-error-label {
+  position: absolute;
+  left: 23px;
+}

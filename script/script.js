@@ -216,6 +216,10 @@ new JustValidate('.section-about-us__form', {
       required: true,
       email: true
     },
+    text: {
+      required: true,
+      minLength: 10,
+    },
   },
 
   messages: {
@@ -228,5 +232,9 @@ new JustValidate('.section-about-us__form', {
       required: 'Вы не ввели e-mail',
       email: 'e-mail введен не верно',
     },
+    text: {
+      required: 'Вы не ввели текст',
+      minLength: 'Текст слишком короткий'
+    }
   }
 });
