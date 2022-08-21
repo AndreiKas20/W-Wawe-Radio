@@ -535,11 +535,11 @@
   }
 
   .section-broadcast__broadcast-list {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .section-broadcast__brodcast-item:not(:nth-child(2n)) {
-    margin-right: 30px;
+    margin-right: 0;
   }
 
   .section-broadcast__img {
@@ -592,8 +592,15 @@
   }
 
   .head-container__entrance-block {
-    left: 14%;
+    width: 539px;
+    padding: 40px;
+    left: calc(50% - 270px);
     z-index: 4;
+  }
+
+  .head-container__entr-input {
+    min-width: auto;
+    width: 100%;
   }
 
   .section-playlists__music-item:not(:nth-child(2n)) {
@@ -932,17 +939,20 @@
     margin-right: auto;
   }
 
+  .head-container__nav-burger::after {
+    display: none;
+   }
+
+  .head-container__nav-burger::before {
+    display: none;
+  }
+
   .section-broadcast__brodcast-item:not(:nth-child(2n)) {
     margin-right: 0;
   }
 
   .section-broadcast__broadcast-list {
     justify-content: space-between;
-  }
-
-  .head-container__entrance-block {
-    padding: 20px;
-    max-width: 80%;
   }
 
   .head-container__entr-input {
@@ -983,6 +993,12 @@
 
   .header-container__ico-play-1022 {
     display: none;
+  }
+
+  .head-container__entrance-block {
+    padding: 20px;
+    width: 400px;
+    left: calc(50% - 200px);
   }
 
   .head-container__what-air-block-600 {
@@ -1103,7 +1119,6 @@
 
   .head-container__nav-burger {
     padding: 61px 32px 0px 32px;
-    min-height: 48vh;
     flex-direction: column;
     align-items: normal;
   }
@@ -1128,13 +1143,15 @@
 
   .head-container__nav-burger::after {
     content: '';
+    display: block;
     position: absolute;
-    top: 272px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 38.5%;
     background-color: #fff;
     z-index: -1;
+    background-image: none;
   }
 
   .section-playlists__music-name {
@@ -1297,6 +1314,12 @@
     left: auto;
     right: 0;
   }
+
+  .head-container__entrance-block {
+    padding: 20px;
+    width: 256px;
+    left: calc(50% - 128px);
+}
 
   .head-container__btn-esc-entr svg {
     width: 20px;

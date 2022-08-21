@@ -179,7 +179,6 @@ picture {
   align-items: center;
   position: absolute;
   background-color: var(--colorSemiGray-D2D5DD);
-  height: 70vh;
   width: 100%;
   z-index: 3;
   transform: translateY(-120%);
@@ -205,10 +204,10 @@ picture {
   display: none;
 }
 
-.head-container__list-burger::after {
+.head-container__nav-burger::after {
   content: '';
   position: absolute;
-  top: 86px;
+  bottom: 1px;
   right: 256px;
   width: 113px;
   height: 364px;
@@ -216,7 +215,7 @@ picture {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='115' height='315' viewBox='0 0 115 315' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M73.4159 1C33.4215 1 1 11.2609 1 23.9184C1 36.5758 33.4215 46.8368 73.4159 46.8368C95.8298 46.8368 114 42.4932 114 37.1351C114 31.777 95.8298 27.4335 73.4159 27.4335C33.4215 27.4335 1 37.6944 1 50.3518C1 63.0094 33.4215 73.2706 73.4159 73.2706C95.8298 73.2706 114 68.9268 114 63.5686C114 58.2105 95.8298 53.8669 73.4159 53.8669C33.4215 53.8669 1 64.1908 1 76.9259C1 89.6609 33.4215 99.9851 73.4159 99.9851C95.8298 99.9851 114 95.6414 114 90.2831C114 84.9249 95.8298 80.582 73.4159 80.582C33.4215 80.582 1 90.8425 1 103.5C1 116.158 33.4215 126.418 73.4159 126.418C95.8298 126.418 114 122.075 114 116.717C114 111.359 95.8298 107.015 73.4159 107.015C33.4215 107.015 1 117.276 1 129.934C1 142.591 33.4215 152.852 73.4159 152.852C95.8298 152.852 114 148.508 114 143.151C114 137.792 95.8298 133.449 73.4159 133.449C33.4215 133.449 1 143.71 1 156.367C1 169.024 33.4215 179.285 73.4159 179.285C95.8298 179.285 114 174.942 114 169.583C114 164.226 95.8298 159.882 73.4159 159.882C33.4215 159.882 1 170.206 1 182.941C1 195.676 33.4215 206 73.4159 206M73.4159 160C33.4215 160 1 170.261 1 182.918C1 195.576 33.4215 205.837 73.4159 205.837C95.8298 205.837 114 201.493 114 196.135C114 190.777 95.8298 186.433 73.4159 186.433C33.4215 186.433 1 196.694 1 209.352C1 222.009 33.4215 232.271 73.4159 232.271C95.8298 232.271 114 227.927 114 222.569C114 217.211 95.8298 212.867 73.4159 212.867C33.4215 212.867 1 223.191 1 235.926C1 248.661 33.4215 258.985 73.4159 258.985C95.8298 258.985 114 254.641 114 249.283C114 243.925 95.8298 239.582 73.4159 239.582C33.4215 239.582 1 249.842 1 262.5C1 275.158 33.4215 285.418 73.4159 285.418C95.8298 285.418 114 281.075 114 275.717C114 270.359 95.8298 266.015 73.4159 266.015C33.4215 266.015 1 276.276 1 288.934C1 301.591 33.4215 311.852 73.4159 311.852C95.8298 311.852 114 307.508 114 302.151C114 296.792 95.8298 292.449 73.4159 292.449C33.4215 292.449 1 302.71 1 315.367C1 328.024 33.4215 338.285 73.4159 338.285C95.8298 338.285 114 333.942 114 328.583C114 323.226 95.8298 318.882 73.4159 318.882C33.4215 318.882 1 329.206 1 341.941C1 354.676 33.4215 365 73.4159 365' stroke='%23A1A6B4' stroke-linecap='round'/%3e%3c/svg%3e ");
 }
 
-.head-container__list-burger::before {
+.head-container__nav-burger::before {
   content: '';
   position: absolute;
   top: 1px;
@@ -309,8 +308,9 @@ picture {
 
 .head-container__entrance-block {
   position: absolute;
-  left: 30%;
+  left: calc(50% - 412px);
   padding: 60px;
+  width: 824px;
   background-color: var(--colorBlack-121723);
   color: var(--colorWhite-FFF);
   z-index: 3;
@@ -771,6 +771,7 @@ picture {
   background: #6D31EE;
   border-radius: 40px;
   border: none;
+  color: var(--colorWhite-FFF);
 }
 
 .section-podcast {
@@ -796,8 +797,13 @@ picture {
   flex-basis: 48.6%;
 }
 
+.section-podcast__cover-podcast {
+  height: 100%;
+}
+
 .section-podcast__podcast {
   position: relative;
+  min-height: 100%;
   background-color: var(--colorWhite-FFF);
 }
 
@@ -827,11 +833,12 @@ picture {
   width: calc(100% - 112px);
   height: 1px;
   background-color: var(--colorLightGray-E6E8EC);
-  top: 77%;
+  bottom: 31px;
   right: 0;
 }
 
 .section-podcast__podcast-bottom {
+  padding-top: 10px;
   position: relative;
 }
 
@@ -943,6 +950,7 @@ picture {
 .section-podcast__podcast-name {
   margin-bottom: 2px;
   font-weight: 400;
+  max-width: 175px;
   font-size: var(--fontSize-big-20px);
   line-height: 20px;
   color: var(--colorBlack-121723);
@@ -1055,6 +1063,10 @@ picture {
   margin-bottom: auto;
 }
 
+.section-broadcast__item-basis {
+  max-width: 200px;
+}
+
 .section-broadcast__text-author {
   margin-bottom: 8px;
   font-weight: 400;
@@ -1066,6 +1078,8 @@ picture {
 .section-broadcast__brodcast-item {
   cursor: pointer;
   font-size: 0;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
@@ -1655,7 +1669,10 @@ picture {
 }
 
 .section-playlists__name-block {
+  padding: 16px;
+  border: solid var(--colorLightGray-E6E8EC) 1px;
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  max-width: 160px;
 }
 
 .section-playlists__music-img {
@@ -1789,10 +1806,7 @@ picture {
   font-style: italic;
 }
 
-.section-playlists__name-block {
-  padding: 16px;
-  border: solid var(--colorLightGray-E6E8EC) 1px;
-}
+
 
 .section-playlists__music-item {
   cursor: pointer;
@@ -2179,7 +2193,8 @@ picture {
 }
 
 .section-about-us__input:focus {
-  border: solid 1px var(--colorLightPurple-AA9DFA);
+  outline: none;
+  border: 1px solid var(--colorLightPurple-AA9DFA);
   background-color: var(--colorSeniBlack-292E39);
 }
 

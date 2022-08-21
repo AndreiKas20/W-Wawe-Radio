@@ -167,21 +167,21 @@
                 <div class="head-container__search-block">
                     <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="head-container__search-form flex">
                         <input aria-label="Поле поиска" type="search" name="search" id="search" class="head-container__search" placeholder="Поиск по сайту">
-                        <button class="head-container__btn-search-block btn flex">
-                            <svg  class="head-container__btn-search-ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button aria-label="Кнопка поиска по сайту" class="head-container__btn-search-block btn flex">
+                            <svg  class="head-container__btn-search-ico" width="2АМ4" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </button>
                       </form>
                 </div>
-                <button class="head-container__btn-search flex">
+                <button aria-label="Кнопка закритя формы входа" class="head-container__btn-search flex">
                     <svg  class="head-container__btn-search-ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
-                <button class="head-container__btn-input">
+                <button aria-label="Кнопка открытия формы входа на сайт" class="head-container__btn-input">
                     Вход
                 </button>
             </div>
@@ -209,8 +209,8 @@
                     </ul>
                 </nav>
                 <div class="head-container__music-block-before flex">
-                    <div class="head-container__mus-left mus-left">
-                        <svg class="head-container__play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div  tabindex="15" class="head-container__mus-left mus-left">
+                        <svg aria-label="Кнопка воспроизведения ранее в эфире" class="head-container__play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
                         </svg>
                         <svg class="head-container__pause" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,9 +225,9 @@
                         <h5 class="head-container__name-mus">«Музыка»</h5>
                     </div>
                 </div>
-                <div class="head-container__music-block-live flex">
+                <div tabindex="16" class="head-container__music-block-live flex">
                     <div class="head-container__mus-left mus-left">
-                        <svg class="head-container__play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-label="Кнопка воспроизведения эфира" class="head-container__play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
                         </svg>
                         <svg class="head-container__pause" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +335,7 @@
                             </picture>
                             <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">15:43</span>
-                            <h4 class="section-podcast__podcast-name">Европа. XIX век</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Европа. XIX век</h4>
                             <span class="section-podcast__name-presenter">Дмитрий Гутенберг</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -358,7 +358,7 @@
                                 </span>
                             </div>
                             </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -380,7 +380,7 @@
                             </picture>
                          <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">5:32</span>
-                            <h4 class="section-podcast__podcast-name">О музыке</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">О музыке</h4>
                             <span class="section-podcast__name-presenter">Дмитрий Гутенберг</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -403,7 +403,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -425,7 +425,7 @@
                             </picture>
                          <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">8:54</span>
-                            <h4 class="section-podcast__podcast-name">Люди сегодня</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Люди сегодня</h4>
                             <span class="section-podcast__name-presenter">Анна Васильева</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -448,7 +448,7 @@
                                 </span>
                             </div>
                         </div>
-                             <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -472,7 +472,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">9:04</span>
-                            <h4 class="section-podcast__podcast-name">Хэллоу, Африка!</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Хэллоу, Африка!</h4>
                             <span class="section-podcast__name-presenter">Пётр Дмитриевский</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -495,7 +495,7 @@
                                 </span>
                             </div>
                          </div>
-                             <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -518,7 +518,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">7:03</span>
-                            <h4 class="section-podcast__podcast-name">Обо всём</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Обо всём</h4>
                             <span class="section-podcast__name-presenter">Пётр Дмитриевский</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -541,7 +541,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -565,7 +565,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">9:15</span>
-                            <h4 class="section-podcast__podcast-name">Физика цвета</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Физика цвета</h4>
                             <span class="section-podcast__name-presenter">Татьяна Флеганова</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -588,7 +588,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -612,7 +612,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">16:04</span>
-                            <h4 class="section-podcast__podcast-name">Источник звука</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Источник звука</h4>
                             <span class="section-podcast__name-presenter">Пётр Дмитриевский</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -635,7 +635,7 @@
                                 </span>
                             </div>
                          </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -659,7 +659,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">6:55</span>
-                            <h4 class="section-podcast__podcast-name">Правила этикета</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Правила этикета</h4>
                             <span class="section-podcast__name-presenter">Татьяна Флеганова</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -682,7 +682,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -706,7 +706,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">6:55</span>
-                            <h4 class="section-podcast__podcast-name">Правила этикета</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Правила этикета</h4>
                             <span class="section-podcast__name-presenter">Татьяна Флеганова</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -729,7 +729,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -752,7 +752,7 @@
                             </picture>
                         <div class="section-podcast__podcast-top">
                             <span class="section-podcast__time-podcast">6:55</span>
-                            <h4 class="section-podcast__podcast-name">Правила этикета</h4>
+                            <h4 aria-label="Название подкаста" tabindex="23" class="section-podcast__podcast-name">Правила этикета</h4>
                             <span class="section-podcast__name-presenter">Татьяна Флеганова</span>
                             <div class="section-podcast__podcast-bottom">
                                 <span class="section-podcast__adv-button" tabindex="30">
@@ -775,7 +775,7 @@
                                 </span>
                             </div>
                         </div>
-                            <button class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button aria-label="Кнопка воспроизведения подкаста" class="section-podcast__btn-play"><svg class="section-podcast__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                 <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                                 </svg>
@@ -802,7 +802,7 @@
                 <div class="section-broadcast__left-block flex">
                     <h2 class="section-broadcast__title">Передачи</h2>
                     <span class="section-broadcast__text-author">Автор</span>
-                    <select class="section-broadcast__select-author" name="js-choice" id="select">
+                    <select aria-label="Выбор автора передачи" class="section-broadcast__select-author" tabindex="20" name="js-choice" id="select">
                         <option value="value">Дмитрий Гутенберг</option>
                         <option value="value1">Татьяна Флеганова</option>
                         <option value="value2">Анна Васильева</option>
@@ -969,35 +969,35 @@
                             <li class="section-guests__ac-item accordion-item ac" tabindex="16">
                               <div class="section-guests__ac-top accordion-top flex">
                                 <h3 class="section-guests__subtitle">Блогеры</h3>
-                                <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                 </svg>
                               </div>
                               <div class=" section-guests__blogers-list accordion-bottom select-ac ac-panel">
                                 <ul class="section-guests__blogers-sub-list flex">
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="SergeyDenisov"><a href="#target-guests" class="section-guests__guests-link">Сергей Денисов</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="EvgeniyVoinovski"><a href="#target-guests" class="section-guests__guests-link">Евгений Войновский</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="OlegSviridovski"><a href="#target-guests" class="section-guests__guests-link">Олег Свиридовский</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="MatveiMechnikov"><a href="#target-guests" class="section-guests__guests-link">Матвей Мечников</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="OlgaMartinova"><a href="#target-guests" class="section-guests__guests-link">Ольга Мартынова</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="VladislavKaupers"><a href="#target-guests" class="section-guests__guests-link">Владислав Кауперс</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="KonstantinPrusino"><a href="#target-guests" class="section-guests__guests-link">Константин Прусино</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="DmitriMihaluk"><a href="#target-guests" class="section-guests__guests-link">Дмитрий Михалок</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="MichailPojitnikov"><a href="#target-guests" class="section-guests__guests-link">Михаил Пожитников</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="IvanKalitnikov"><a href="#target-guests" class="section-guests__guests-link">Иван Калитников</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="PetrPiotrovski"><a href="#target-guests" class="section-guests__guests-link">Пётр Пиотровский</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="GeorgiyPoluyan"><a href="#target-guests" class="section-guests__guests-link">Георгий Полуян</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="DenisTelman"><a href="#target-guests" class="section-guests__guests-link">Денис Тельман</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="UriGorin"><a href="#target-guests" class="section-guests__guests-link">Юрий Горин</a></li>
-                                  <li class="section-guests__blogers-sub-item" tabindex="44" data-path="MaksimSergeev"><a href="#target-guests" class="section-guests__guests-link">Максим Сергеев</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="17" data-path="SergeyDenisov"><a href="#target-guests" class="section-guests__guests-link">Сергей Денисов</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="18" data-path="EvgeniyVoinovski"><a href="#target-guests" class="section-guests__guests-link">Евгений Войновский</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="19" data-path="OlegSviridovski"><a href="#target-guests" class="section-guests__guests-link">Олег Свиридовский</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="20" data-path="MatveiMechnikov"><a href="#target-guests" class="section-guests__guests-link">Матвей Мечников</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="21" data-path="OlgaMartinova"><a href="#target-guests" class="section-guests__guests-link">Ольга Мартынова</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="22" data-path="VladislavKaupers"><a href="#target-guests" class="section-guests__guests-link">Владислав Кауперс</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="23" data-path="KonstantinPrusino"><a href="#target-guests" class="section-guests__guests-link">Константин Прусино</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="24" data-path="DmitriMihaluk"><a href="#target-guests" class="section-guests__guests-link">Дмитрий Михалок</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="25" data-path="MichailPojitnikov"><a href="#target-guests" class="section-guests__guests-link">Михаил Пожитников</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="26" data-path="IvanKalitnikov"><a href="#target-guests" class="section-guests__guests-link">Иван Калитников</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="27" data-path="PetrPiotrovski"><a href="#target-guests" class="section-guests__guests-link">Пётр Пиотровский</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="28" data-path="GeorgiyPoluyan"><a href="#target-guests" class="section-guests__guests-link">Георгий Полуян</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="29" data-path="DenisTelman"><a href="#target-guests" class="section-guests__guests-link">Денис Тельман</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="30" data-path="UriGorin"><a href="#target-guests" class="section-guests__guests-link">Юрий Горин</a></li>
+                                  <li class="section-guests__blogers-sub-item" tabindex="31" data-path="MaksimSergeev"><a href="#target-guests" class="section-guests__guests-link">Максим Сергеев</a></li>
                               </ul>
                               </div>
                             </li>
-                            <li class="section-guests__ac-item accordion-item ac" tabindex="17">
+                            <li class="section-guests__ac-item accordion-item ac" tabindex="32">
                                 <div class="section-guests__ac-top accordion-top flex">
                                   <h3 class="section-guests__subtitle">Арт-критики</h3>
-                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                       <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                   </svg>
@@ -1008,139 +1008,59 @@
                                 </ul>
                                 </div>
                               </li>
-                              <li class="section-guests__ac-item accordion-item ac" tabindex="18">
+                              <li class="section-guests__ac-item accordion-item ac" tabindex="33">
                                 <div class="section-guests__ac-top accordion-top flex">
                                   <h3 class="section-guests__subtitle">Художники</h3>
-                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                       <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                   </svg>
                                 </div>
                                 <div class=" section-guests__blogers-list accordion-bottom select-ac ac-panel">
                                   <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Сергей Денисов</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Матвей Мечников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Константин Прусино</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Иван Калитников</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Евгений Войновский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Ольга Мартынова</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Дмитрий Михалок</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Пётр Пиотровский</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Олег Свиридовский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Владислав Кауперс</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Михаил Пожитников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Георгий Полуян</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Денис Тельман</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Юрий Горин</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Максим Сергеев</li>
+
                                 </ul>
                                 </div>
                               </li>
-                              <li class="section-guests__ac-item accordion-item ac" tabindex="19">
+                              <li class="section-guests__ac-item accordion-item ac" tabindex="34">
                                 <div class="section-guests__ac-top accordion-top flex">
                                   <h3 class="section-guests__subtitle">Люди науки</h3>
-                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                       <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                   </svg>
                                 </div>
                                 <div class=" section-guests__blogers-list accordion-bottom select-ac ac-panel">
                                   <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Сергей Денисов</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Матвей Мечников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Константин Прусино</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Иван Калитников</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Евгений Войновский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Ольга Мартынова</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Дмитрий Михалок</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Пётр Пиотровский</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Олег Свиридовский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Владислав Кауперс</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Михаил Пожитников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Георгий Полуян</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Денис Тельман</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Юрий Горин</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Максим Сергеев</li>
+
                                 </ul>
                                 </div>
                               </li>
-                              <li class="section-guests__ac-item accordion-item ac" tabindex="20">
+                              <li class="section-guests__ac-item accordion-item ac" tabindex="35">
                                 <div class="section-guests__ac-top accordion-top flex">
                                   <h3 class="section-guests__subtitle">Историки</h3>
-                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                       <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                   </svg>
                                 </div>
                                 <div class=" section-guests__blogers-list accordion-bottom select-ac ac-panel">
                                   <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Сергей Денисов</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Матвей Мечников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Константин Прусино</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Иван Калитников</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Евгений Войновский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Ольга Мартынова</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Дмитрий Михалок</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Пётр Пиотровский</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Олег Свиридовский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Владислав Кауперс</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Михаил Пожитников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Георгий Полуян</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Денис Тельман</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Юрий Горин</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Максим Сергеев</li>
+
                                 </ul>
                                 </div>
                               </li>
-                              <li class="section-guests__ac-item accordion-item ac" tabindex="21">
+                              <li class="section-guests__ac-item accordion-item ac" tabindex="36">
                                 <div class="section-guests__ac-top accordion-top flex">
                                   <h3 class="section-guests__subtitle">Филологи</h3>
-                                  <svg class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <svg aria-label="Раскрыть список гостей" class="section-guests__ico-arr" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                                       <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                                   </svg>
                                 </div>
                                 <div class=" section-guests__blogers-list accordion-bottom select-ac ac-panel">
                                   <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Сергей Денисов</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Матвей Мечников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Константин Прусино</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Иван Калитников</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Евгений Войновский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Ольга Мартынова</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Дмитрий Михалок</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Пётр Пиотровский</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Олег Свиридовский</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Владислав Кауперс</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Михаил Пожитников</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Георгий Полуян</li>
-                                </ul>
-                                <ul class="section-guests__blogers-sub-list">
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Денис Тельман</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Юрий Горин</li>
-                                    <li class="section-guests__blogers-sub-item" tabindex="44">Максим Сергеев</li>
+
                                 </ul>
                                 </div>
                               </li>
@@ -1686,7 +1606,7 @@
                 </div>
                 <div class="section-playlists__right-block">
                     <ul class="section-playlists__music-list flex">
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="37">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1708,7 +1628,7 @@
                                 <p class="section-playlists__music-adv">3 последних альбома</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="38">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1730,7 +1650,7 @@
                                 <p class="section-playlists__music-adv">Все песни</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="39">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1752,7 +1672,7 @@
                                 <p class="section-playlists__music-adv">Все синглы</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="40">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1774,7 +1694,7 @@
                                 <p class="section-playlists__music-adv">3 последних альбома</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="41">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1796,7 +1716,7 @@
                                 <p class="section-playlists__music-adv">Все EP</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="42">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1818,7 +1738,7 @@
                                 <p class="section-playlists__music-adv">Альбом «Колокол»</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="43">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1840,7 +1760,7 @@
                                 <p class="section-playlists__music-adv">Лучшее за всё время</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="44">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1862,7 +1782,7 @@
                                 <p class="section-playlists__music-adv">Лучшее за всё время</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="45">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1884,7 +1804,7 @@
                                 <p class="section-playlists__music-adv">Период 1984–1988</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="46">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1906,7 +1826,7 @@
                                 <p class="section-playlists__music-adv">Хиты</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="47">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -1928,7 +1848,7 @@
                                 <p class="section-playlists__music-adv">Все синглы</p>
                             </div>
                         </li>
-                        <li class="section-playlists__music-item" tabindex="7">
+                        <li class="section-playlists__music-item" tabindex="48">
                             <button class="section-playlists__btn-play">
                                 <svg class="section-playlists__ico-play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="21" fill="#6D31EE"/>
@@ -2109,24 +2029,24 @@
                         </div>
                       </div>
                       <div class="section-about-us__form-block">
-                        <form aria-label="Форма оставление заявки" action="https://jsonplaceholder.typicode.com/posts" method="POST" class="section-about-us__form">
+                        <form aria-label="Форма обратной связи" action="https://jsonplaceholder.typicode.com/posts" method="POST" class="section-about-us__form">
                             <textarea class="section-about-us__input section-about-us__input_big-heght" data-validate-field="text" name="text" id="text" cols="30" rows="10" placeholder="Что скажете?"></textarea>
                             <div class="section-about-us__bot-form">
                                 <div class="section-about-us__input-block">
-                                    <input type="text" data-validate-field="name" name="name" id="name" class="section-about-us__input section-about-us__input1" placeholder="Имя">
+                                    <input type="text" data-validate-field="name" name="name" id="name" class="section-about-us__input section-about-us__input1" placeholder="Имя" required>
                                 </div>
                                 <div class="section-about-us__input-block">
-                                    <input type="email" data-validate-field="mail" name="email" id="email" class="section-about-us__input section-about-us__input2" placeholder="Email">
+                                    <input type="email" data-validate-field="mail" name="email" id="email" class="section-about-us__input section-about-us__input2" placeholder="Email" required>
                                 </div>
                             </div>
-                            <button class="section-about-us__btn btn">
+                            <button type="submit" class="section-about-us__btn btn">
                               Отправить
                             </button>
                             <br>
-                            <label tabindex="7" class="section-about-us__check-label" for="check">
-                              <input class="section-about-us__checkbox" type="checkbox" name="accept-personal-data-processing" id="check" required>
+                            <label tabindex="49" class="section-about-us__check-label" for="check" >
+                              <input tabindex="50" class="section-about-us__checkbox" type="checkbox" data-validate-field="check" name="check" id="check" required>
                               Согласен на обработку персональных данных
-                              <span class="section-about-us__span"></span>
+                              <span tabindex="51" class="section-about-us__span"></span>
                             </label>
                           </form>
                       </div>

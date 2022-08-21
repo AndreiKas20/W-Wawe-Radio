@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 // slide
-
-
 var wi = window.innerWidth;
 if (wi < 1300) {
   if (wi < 1197) {
@@ -72,10 +70,8 @@ if (wi < 1300) {
 
   });
 }
-
-
-
 //
+
 // Блок входа
 let enterBtn = document.querySelector('.head-container__btn-input');
 let enterBlock = document.querySelector('.head-container__entrance-block');
@@ -205,6 +201,7 @@ whatAirBtn.addEventListener('click', function () {
 })
 //
 
+// Валидация формы
 new JustValidate('.section-about-us__form', {
   rules: {
     name: {
@@ -219,6 +216,9 @@ new JustValidate('.section-about-us__form', {
     text: {
       required: true,
       minLength: 10,
+    },
+    check: {
+      required: true,
     },
   },
 
@@ -235,6 +235,9 @@ new JustValidate('.section-about-us__form', {
     text: {
       required: 'Вы не ввели текст',
       minLength: 'Текст слишком короткий'
+    },
+    check: {
+      required: 'Вы не подтвердили согласие'
     }
   }
 });
