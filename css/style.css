@@ -2296,6 +2296,10 @@ picture {
   border-radius: 100%;
 }
 
+.section-about-us__nav-btn:focus-visible {
+  outline: none;
+}
+
 .section-about-us__nav-btn svg path,
 .section-about-us__nav-btn svg circle {
   transition: stroke .3s ease-in-out;
