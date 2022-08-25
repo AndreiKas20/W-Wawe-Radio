@@ -347,11 +347,19 @@ picture {
   background-color: rgba(230, 232, 236, 0.4);
 }
 
+.btn:focus-visible {
+  outline: none;
+}
+
 .head-container__btn-esc-entr {
   position: absolute;
   right: 50px;
   top: 50px;
   border: none;
+}
+
+.head-container__btn-esc-entr:focus-visible {
+  outline: none;
 }
 
 .head-container__btn-esc-entr svg>circle {
@@ -402,6 +410,11 @@ picture {
   color: var(--colorSemiPurple-6D31EE);
 }
 
+.head-container__entr-link-registr:focus-visible {
+  outline: none;
+  background-color: var(--colorLightPurple-AA9DFA);
+}
+
 .head-container__entr-text {
   margin-bottom: 30px;
   font-weight: 400;
@@ -439,9 +452,15 @@ picture {
   top: 2px;
 }
 
+.head-container__entr-adv-social-link:focus-visible {
+  outline: none;
+}
+
 .head-container__entr-adv-social-link:not(:last-child) {
   margin-right: 46px;
 }
+
+
 
 .head-container::after {
   content: '';
@@ -468,6 +487,46 @@ picture {
 
 .head-container__ico-link {
   margin-right: 80px;
+}
+
+.head-container__ico-link:focus-visible {
+  outline: none;
+}
+
+.head-container__entr-adv-social-link:focus-visible .face>path {
+  fill: var(--colorLightPurple-AA9DFA);
+}
+
+.head-container__entr-adv-social-link:hover .face>path {
+  fill: var(--colorSemiPurple-6D31EE);
+}
+
+.head-container__entr-adv-social-link:active .face>path {
+  fill: var(--colorPurple-4F28A5);
+}
+
+.head-container__entr-adv-social-link:focus-visible .vk>rect {
+  fill: var(--colorLightPurple-AA9DFA);
+}
+
+.head-container__entr-adv-social-link:hover .vk>rect {
+  fill: var(--colorSemiPurple-6D31EE);
+}
+
+.head-container__entr-adv-social-link:active .vk>rect {
+  fill: var(--colorPurple-4F28A5);
+}
+
+.head-container__entr-adv-social-link:focus-visible .goog>rect {
+  fill: var(--colorLightPurple-AA9DFA);
+}
+
+.head-container__entr-adv-social-link:hover .goog>rect {
+  fill: var(--colorSemiPurple-6D31EE);
+}
+
+.head-container__entr-adv-social-link:active .goog>rect {
+  fill: var(--colorPurple-4F28A5);
 }
 
 .head-container__nav-top {
@@ -522,9 +581,12 @@ picture {
   transition: stroke 0.3s ease-in-out;
 }
 
+.head-container__btn-search:focus-visible {
+  outline: none;
+}
+
 .head-container__btn-search:focus-visible .head-container__btn-search-ico>path {
   stroke: var(--colorLightPurple-AA9DFA);
-  outline: none;
 }
 
 .head-container__btn-search:hover .head-container__btn-search-ico>path {
@@ -679,6 +741,18 @@ picture {
   cursor: pointer;
 }
 
+.head-container__btn-play {
+  border: none;
+}
+
+.head-container__btn-play:focus-visible {
+  outline: none;
+}
+
+.head-container__btn-play:focus-visible svg > path {
+  fill: var(--colorLightPurple-AA9DFA);
+}
+
 .head-container__mus-left svg>path {
   transition: fill .3s ease-in-out;
 }
@@ -728,6 +802,12 @@ picture {
   font-size: var(--fontSize-small);
   line-height: 16px;
   color: var(--colorBlack-121723);
+}
+
+.head-container__entr-input:focus-visible {
+  outline: none;
+  border: 1px solid var(--colorLightPurple-AA9DFA);
+  background-color: var(--colorSeniBlack-292E39);
 }
 
 .container-live-sec {
@@ -798,6 +878,20 @@ picture {
   border-radius: 40px;
   border: none;
   color: var(--colorWhite-FFF);
+  transition: all .3s ease-in-out;
+}
+
+.head-container__entr-btn:focus-visible {
+  background-color: var(--colorLightPurple-AA9DFA);
+  outline: 2px solid var(--colorSemiPurple-6D31EE);
+}
+
+.head-container__entr-btn:hover {
+  background-color: var(--colorLightPurple-AA9DFA);
+}
+
+.head-container__entr-btn:active {
+  background-color: var(--colorPurple-4F28A5);
 }
 
 .section-podcast {
@@ -1383,6 +1477,10 @@ picture {
 
 .section-guests__link-social:not(:last-child) {
   margin-right: 26px;
+}
+
+.section-guests__link-social:focus-visible {
+  outline: none;
 }
 
 .section-guests__link-social-ico>path {
@@ -2375,6 +2473,10 @@ picture {
   margin-right: 17px;
 }
 
+.footer__link-social:focus-visible {
+  outline: none;
+}
+
 .footer__link-social svg>path {
   transition: fill .3s ease-in-out;
 }
@@ -2497,4 +2599,8 @@ picture {
 
 .choices__list--dropdown .choices__item.is-selected {
   display: none;
+}
+
+.footer__link-logo:focus-visible {
+  outline: none;
 }
