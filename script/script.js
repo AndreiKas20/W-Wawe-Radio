@@ -2,8 +2,8 @@
 const element = document.querySelector('#select');
 const choices = new Choices(element, {
   searchEnabled: false,
-  addItems: true,
   itemSelectText: '',
+  shouldSort: false,
 });
 //
 
@@ -71,22 +71,14 @@ if (wi < 1300) {
   });
 }
 //
-
+const modal = new GraphModal();
 // Блок входа
 let enterBtn = document.querySelector('.head-container__btn-input');
-let enterBlock = document.querySelector('.head-container__entrance-block');
 
-
-enterBtn.addEventListener('click', function () {
-  enterBlock.classList.toggle('head-container__entrance-block--active')
+enterBtn.addEventListener('click', () => {
+	new GraphModal().open('second');
 });
 
-let escBlock = document.querySelector('.head-container__btn-esc-entr');
-
-escBlock.addEventListener('click', function () {
-  enterBlock.classList.remove('head-container__entrance-block--active');
-});
-//
 // Блок поиска
 let serchBtn = document.querySelector('.head-container__btn-search');
 let blockSearch = document.querySelector('.head-container__search-block')
@@ -147,7 +139,6 @@ btnPlayPodcast.forEach(function (el) {
     pause.classList.toggle('section-podcast__ico-pause--active')
   })
 })
-// Как сделать сброс?
 //
 
 // Выбор по клику
@@ -241,3 +232,29 @@ new JustValidate('.section-about-us__form', {
     }
   }
 });
+
+new JustValidate('.head-container__entr-form', {
+  rules: {
+    password: {
+      required: true,
+      password: true
+    },
+    text: {
+      required: true,
+      minLength: 3,
+    },
+  },
+
+  messages: {
+    password: {
+      required: 'Вы не ввели  пароль',
+      password: 'Пароль простой'
+    },
+    text: {
+      required: 'Вы не ввели логин',
+      minLength: 'Логин слишком короткий'
+    },
+  }
+});
+
+
