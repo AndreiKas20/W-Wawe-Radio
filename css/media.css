@@ -512,6 +512,30 @@
     margin: 0;
   }
 
+  .section-about-us__swiper-slide1 {
+    background-image: url(../img/swiper-foto-768-1.jpg);
+  }
+
+  .section-about-us__swiper-slide2 {
+    background-image: url(../img/swiper-foto-768-2.jpg);
+  }
+
+  .section-about-us__swiper-slide3 {
+    background-image: url(../img/swiper-foto-768-3.jpg);
+  }
+
+  .section-about-us__swiper-slide4 {
+    background-image: url(../img/swiper-foto-768-4.jpg);
+  }
+
+  .section-about-us__swiper-slide5 {
+    background-image: url(../img/swiper-foto-768-5.jpg);
+  }
+
+  .section-about-us__swiper-slide6 {
+    background-image: url(../img/swiper-foto-768-6.jpg);
+  }
+
   .choices {
     margin-bottom: 47px;
   }
@@ -822,29 +846,7 @@
     padding: 26px 31px;
   }
 
-  .section-about-us__swiper-slide1 {
-    background-image: url(../img/swiper-foto-768-1.jpg);
-  }
 
-  .section-about-us__swiper-slide2 {
-    background-image: url(../img/swiper-foto-768-2.jpg);
-  }
-
-  .section-about-us__swiper-slide3 {
-    background-image: url(../img/swiper-foto-768-3.jpg);
-  }
-
-  .section-about-us__swiper-slide4 {
-    background-image: url(../img/swiper-foto-768-4.jpg);
-  }
-
-  .section-about-us__swiper-slide5 {
-    background-image: url(../img/swiper-foto-768-5.jpg);
-  }
-
-  .section-about-us__swiper-slide6 {
-    background-image: url(../img/swiper-foto-768-6.jpg);
-  }
 
   .footer__top-block {
     align-items: center;
