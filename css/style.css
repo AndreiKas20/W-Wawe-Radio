@@ -1282,6 +1282,7 @@ picture {
   font-weight: 400;
   font-size: var(--fontSize-normal-16px);
   line-height: 16px;
+  max-width: fit-content;
   color: var(--colorBlack-121723);
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
@@ -1575,7 +1576,7 @@ picture {
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
   z-index: 0;
-  top: -13%;
+  top: 0;
 }
 
 .choices[data-type*=select-one]::after {

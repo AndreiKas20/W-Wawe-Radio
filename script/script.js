@@ -19,58 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 //
 
-// slide
-// var wi = window.innerWidth;
-// if (wi < 1300) {
-//   if (wi < 1197) {
-//     if (wi < 400) {
-//       const swiper = new Swiper('.swiper', {
-//         speed: 400,
-//         navigation: {
-//           nextEl: '.button-next',
-//           prevEl: '.button-prev',
-//         },
-//         slidesPerView: 2.2,
-//         spaceBetween: 17,
-
-//       });
-//     } else {
-//       const swiper = new Swiper('.swiper', {
-//         speed: 400,
-//         navigation: {
-//           nextEl: '.button-next',
-//           prevEl: '.button-prev',
-//         },
-//         slidesPerView: 2,
-//         spaceBetween: 30,
-
-//       });
-//     }
-//   } else {
-//     const swiper = new Swiper('.swiper', {
-//       speed: 400,
-//       navigation: {
-//         nextEl: '.button-next',
-//         prevEl: '.button-prev',
-//       },
-//       slidesPerView: 3,
-//       spaceBetween: 170,
-
-//     });
-//   }
-// } else {
-//   const swiper = new Swiper('.swiper', {
-//     speed: 400,
-//     navigation: {
-//       nextEl: '.button-next',
-//       prevEl: '.button-prev',
-//     },
-//     slidesPerView: 4,
-//     spaceBetween: 30,
-
-//   });
-// }
-
 const swiper = new Swiper('.swiper', {
           speed: 400,
           navigation: {
